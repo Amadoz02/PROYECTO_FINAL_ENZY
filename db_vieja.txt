@@ -1,0 +1,237 @@
+
+
+create database urban_pro;
+use urban_pro;
+
+CREATE TABLE `carritos` (
+  `id_carrito` int NOT NULL,
+  `id_cliente` int DEFAULT NULL,
+  `id_venta` int DEFAULT NULL,
+  `estado` enum('activo','cerrado') DEFAULT 'activo'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `categorias` (
+  `id_categoria` int NOT NULL,
+  `nombre_categoria` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `detalles_carrito` (
+  `id_detalle` int NOT NULL,
+  `id_carrito` int DEFAULT NULL,
+  `id_producto` int DEFAULT NULL,
+  `cantidad` int DEFAULT '1',
+  `precio_unitario` decimal(10,2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `direcciones` (
+  `id_direccion` int NOT NULL,
+  `id_usuario` int DEFAULT NULL,
+  `direccion` varchar(200) DEFAULT NULL,
+  `ciudad` varchar(100) DEFAULT NULL,
+  `departamento` varchar(100) DEFAULT NULL,
+  `codigo_postal` varchar(20) DEFAULT NULL,
+  `observaciones` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `favoritos` (
+  `id_favorito` int NOT NULL,
+  `id_usuario` int DEFAULT NULL,
+  `id_producto` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `generos` (
+  `id_genero` int NOT NULL,
+  `tipo_genero` enum('male','female','unisex') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `imagenes` (
+  `id_imagen` int NOT NULL,
+  `id_producto` int NOT NULL,
+  `url_imagen` varchar(255) NOT NULL,
+  `descripcion` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `metodos_pago` (
+  `id_metodo` int NOT NULL,
+  `nombre_metodo` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `productos` (
+  `id_producto` int NOT NULL,
+  `nombre` varchar(100) NOT NULL,
+  `precio` decimal(10,2) NOT NULL,
+  `descripcion` text,
+  `id_talla` int DEFAULT NULL,
+  `id_categoria` int DEFAULT NULL,
+  `id_genero` int DEFAULT NULL,
+  `estado` enum('activo','inactivo') DEFAULT 'activo'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `roles` (
+  `id_rol` int NOT NULL,
+  `nombre_rol` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `tallas` (
+  `id_talla` int NOT NULL,
+  `talla` char(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `usuarios` (
+  `id_usuario` int NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `correo` varchar(100) NOT NULL,
+  `contrasena` varchar(100) NOT NULL,
+  `id_rol` int DEFAULT NULL,
+  `estado` enum('Activo','inactivo') NOT NULL DEFAULT 'Activo'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `ventas` (
+  `id_venta` int NOT NULL,
+  `id_usuario` int DEFAULT NULL,
+  `fecha` datetime DEFAULT CURRENT_TIMESTAMP,
+  `total` decimal(10,2) DEFAULT NULL,
+  `id_metodo` int DEFAULT NULL,
+  `estado` enum('procesando','exitosa') DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+ALTER TABLE `carritos`
+  ADD PRIMARY KEY (`id_carrito`),
+  ADD KEY `id_cliente` (`id_cliente`),
+  ADD KEY `id_venta` (`id_venta`);
+
+ALTER TABLE `categorias`
+  ADD PRIMARY KEY (`id_categoria`);
+
+ALTER TABLE `detalles_carrito`
+  ADD PRIMARY KEY (`id_detalle`),
+  ADD KEY `id_carrito` (`id_carrito`),
+  ADD KEY `id_producto` (`id_producto`);
+
+ALTER TABLE `direcciones`
+  ADD PRIMARY KEY (`id_direccion`),
+  ADD KEY `id_usuario` (`id_usuario`);
+
+
+ALTER TABLE `favoritos`
+  ADD PRIMARY KEY (`id_favorito`),
+  ADD KEY `id_usuario` (`id_usuario`),
+  ADD KEY `id_producto` (`id_producto`);
+
+ALTER TABLE `generos`
+  ADD PRIMARY KEY (`id_genero`);
+
+ALTER TABLE `imagenes`
+  ADD PRIMARY KEY (`id_imagen`),
+  ADD KEY `id_producto` (`id_producto`);
+
+ALTER TABLE `metodos_pago`
+  ADD PRIMARY KEY (`id_metodo`);
+
+
+ALTER TABLE `productos`
+  ADD PRIMARY KEY (`id_producto`),
+  ADD KEY `id_talla` (`id_talla`),
+  ADD KEY `id_categoria` (`id_categoria`),
+  ADD KEY `id_genero` (`id_genero`);
+
+ALTER TABLE `roles`
+  ADD PRIMARY KEY (`id_rol`);
+
+ALTER TABLE `tallas`
+  ADD PRIMARY KEY (`id_talla`);
+
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id_usuario`),
+  ADD UNIQUE KEY `correo` (`correo`),
+  ADD KEY `fk_usuarios_roles` (`id_rol`);
+
+ALTER TABLE `ventas`
+  ADD PRIMARY KEY (`id_venta`),
+  ADD KEY `id_usuario` (`id_usuario`),
+  ADD KEY `id_metodo` (`id_metodo`);
+
+
+ALTER TABLE `carritos`
+  MODIFY `id_carrito` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `categorias`
+  MODIFY `id_categoria` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `detalles_carrito`
+  MODIFY `id_detalle` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `direcciones`
+  MODIFY `id_direccion` int NOT NULL AUTO_INCREMENT;
+
+
+ALTER TABLE `favoritos`
+  MODIFY `id_favorito` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `generos`
+  MODIFY `id_genero` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `imagenes`
+  MODIFY `id_imagen` int NOT NULL AUTO_INCREMENT;
+
+
+ALTER TABLE `metodos_pago`
+  MODIFY `id_metodo` int NOT NULL AUTO_INCREMENT;
+
+
+ALTER TABLE `productos`
+  MODIFY `id_producto` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `roles`
+  MODIFY `id_rol` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `tallas`
+  MODIFY `id_talla` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `usuarios`
+  MODIFY `id_usuario` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `ventas`
+  MODIFY `id_venta` int NOT NULL AUTO_INCREMENT;
+
+
+ALTER TABLE `carritos`
+  ADD CONSTRAINT `carritos_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `usuarios` (`id_usuario`),
+  ADD CONSTRAINT `carritos_ibfk_2` FOREIGN KEY (`id_venta`) REFERENCES `ventas` (`id_venta`);
+
+ALTER TABLE `detalles_carrito`
+  ADD CONSTRAINT `detalles_carrito_ibfk_1` FOREIGN KEY (`id_carrito`) REFERENCES `carritos` (`id_carrito`),
+  ADD CONSTRAINT `detalles_carrito_ibfk_2` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`);
+
+ALTER TABLE `direcciones`
+  ADD CONSTRAINT `direcciones_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`);
+
+ALTER TABLE `favoritos`
+  ADD CONSTRAINT `favoritos_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`),
+  ADD CONSTRAINT `favoritos_ibfk_2` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`);
+
+ALTER TABLE `imagenes`
+  ADD CONSTRAINT `imagenes_ibfk_1` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`) ON DELETE CASCADE;
+
+ALTER TABLE `productos`
+  ADD CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`id_talla`) REFERENCES `tallas` (`id_talla`) ON DELETE SET NULL,
+  ADD CONSTRAINT `productos_ibfk_2` FOREIGN KEY (`id_categoria`) REFERENCES `categorias` (`id_categoria`) ON DELETE SET NULL,
+ 
+  ADD CONSTRAINT `productos_ibfk_4` FOREIGN KEY (`id_genero`) REFERENCES `generos` (`id_genero`) ON DELETE SET NULL;
+
+
+ALTER TABLE `usuarios`
+  ADD CONSTRAINT `fk_usuarios_roles` FOREIGN KEY (`id_rol`) REFERENCES `roles` (`id_rol`) ON DELETE SET NULL;
+
+ALTER TABLE `ventas`
+  ADD CONSTRAINT `ventas_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`),
+  ADD CONSTRAINT `ventas_ibfk_2` FOREIGN KEY (`id_metodo`) REFERENCES `metodos_pago` (`id_metodo`);
+INSERT INTO roles (nombre_rol) VALUES ( 'SuperAdmin');
+INSERT INTO roles (nombre_rol) VALUES ('Admin');
+INSERT INTO roles (nombre_rol) VALUES ('Cliente');

@@ -1,0 +1,1408 @@
+22-Jul-2025 09:19:15.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.8
+22-Jul-2025 09:19:15.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jun 5 2025 17:49:55 UTC
+22-Jul-2025 09:19:15.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.8.0
+22-Jul-2025 09:19:15.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+22-Jul-2025 09:19:15.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+22-Jul-2025 09:19:15.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+22-Jul-2025 09:19:15.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-22
+22-Jul-2025 09:19:15.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       22.0.2+9-70
+22-Jul-2025 09:19:15.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+22-Jul-2025 09:19:15.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+22-Jul-2025 09:19:15.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+22-Jul-2025 09:19:15.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\logging.properties
+22-Jul-2025 09:19:15.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Jul-2025 09:19:15.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+22-Jul-2025 09:19:15.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+22-Jul-2025 09:19:15.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+22-Jul-2025 09:19:15.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+22-Jul-2025 09:19:15.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+22-Jul-2025 09:19:15.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+22-Jul-2025 09:19:15.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+22-Jul-2025 09:19:15.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+22-Jul-2025 09:19:15.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+22-Jul-2025 09:19:15.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+22-Jul-2025 09:19:15.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\temp
+22-Jul-2025 09:19:15.250 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [2.0.9] con la versión APR [1.7.6].
+22-Jul-2025 09:19:15.271 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.5.0 8 Apr 2025]
+22-Jul-2025 09:19:15.496 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+22-Jul-2025 09:19:15.513 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [492] milliseconds
+22-Jul-2025 09:19:15.560 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+22-Jul-2025 09:19:15.560 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.8]
+22-Jul-2025 09:19:15.569 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+22-Jul-2025 09:19:15.580 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+22-Jul-2025 09:19:16.829 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+22-Jul-2025 09:19:17.472 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:17.477 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:17.544 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:17.544 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:17.545 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:17.546 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:17.546 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:17.547 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:17.547 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:17.548 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:17.549 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:17.549 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:17.652 WARNING [main] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+22-Jul-2025 09:19:17.972 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [2.402] ms
+22-Jul-2025 09:19:17.972 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\docs] de la aplicación web
+22-Jul-2025 09:19:18.005 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\docs] has finished in [33] ms
+22-Jul-2025 09:19:18.005 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\examples] de la aplicación web
+22-Jul-2025 09:19:18.337 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\examples] has finished in [332] ms
+22-Jul-2025 09:19:18.337 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\host-manager] de la aplicación web
+22-Jul-2025 09:19:18.368 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\host-manager] has finished in [31] ms
+22-Jul-2025 09:19:18.368 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\manager] de la aplicación web
+22-Jul-2025 09:19:18.401 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\manager] has finished in [33] ms
+22-Jul-2025 09:19:18.401 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\ROOT] de la aplicación web
+22-Jul-2025 09:19:18.425 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\ROOT] has finished in [24] ms
+22-Jul-2025 09:19:18.429 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+22-Jul-2025 09:19:18.444 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2937] milliseconds
+22-Jul-2025 09:19:20.330 WARNING [http-nio-8080-exec-10] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+22-Jul-2025 09:19:20.331 WARNING [http-nio-8080-exec-10] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 09:19:20.842 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+22-Jul-2025 09:19:20.893 INFO [http-nio-8080-exec-5] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+22-Jul-2025 09:19:20.894 WARNING [http-nio-8080-exec-5] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+22-Jul-2025 09:19:21.811 INFO [http-nio-8080-exec-5] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+22-Jul-2025 09:19:22.295 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 09:19:22.318 WARNING [http-nio-8080-exec-5] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:22.320 WARNING [http-nio-8080-exec-5] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:22.321 WARNING [http-nio-8080-exec-5] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:22.321 WARNING [http-nio-8080-exec-5] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:22.322 WARNING [http-nio-8080-exec-5] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:22.322 WARNING [http-nio-8080-exec-5] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:22.323 WARNING [http-nio-8080-exec-5] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:22.323 WARNING [http-nio-8080-exec-5] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:22.324 WARNING [http-nio-8080-exec-5] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:22.325 WARNING [http-nio-8080-exec-5] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:22.325 WARNING [http-nio-8080-exec-5] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:22.325 WARNING [http-nio-8080-exec-5] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:19:22.411 WARNING [http-nio-8080-exec-5] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+22-Jul-2025 09:19:22.664 INFO [http-nio-8080-exec-5] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.771] ms
+22-Jul-2025 09:19:22.664 INFO [http-nio-8080-exec-4] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+22-Jul-2025 09:19:46.399 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.ServerRuntime$Responder.process An exception mapping did not successfully produce and processed a response. Logging the exception propagated to the default exception mapper.
+	com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+		at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+		at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+		at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+		at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+		at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+		at controlador.Conexion.getConexion(Conexion.java:44)
+		at controlador.CarritoResource.obtenerTodos(CarritoResource.java:21)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:146)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:189)
+		at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:219)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+		at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+		at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+		at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+		at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+		at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1773)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:59)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+	Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+		at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+		at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+		at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+		at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+		at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+		at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
+		at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
+		at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+		... 51 more
+	Caused by: java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:752)
+		at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+		at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+		... 54 more
+22-Jul-2025 09:19:46.648 SEVERE [http-nio-8080-exec-1] org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse Error while closing the output stream in order to commit response.
+	org.glassfish.jersey.server.ContainerException: java.util.concurrent.ExecutionException: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.getResponseContext(ResponseWriter.java:278)
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.writeResponseStatusAndHeaders(ResponseWriter.java:128)
+		at org.glassfish.jersey.server.ServerRuntime$Responder$1.getOutputStream(ServerRuntime.java:667)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:171)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(CommittingOutputStream.java:276)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.commit(CommittingOutputStream.java:232)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.close(CommittingOutputStream.java:247)
+		at org.glassfish.jersey.message.internal.OutboundMessageContext.close(OutboundMessageContext.java:865)
+		at org.glassfish.jersey.server.ContainerResponse.close(ContainerResponse.java:403)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse(ServerRuntime.java:749)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.processResponse(ServerRuntime.java:385)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.processResponseWithDefaultExceptionMapper(ServerRuntime.java:633)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:458)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:269)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+		at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+		at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+		at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+		at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+		at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1773)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:59)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+	Caused by: java.util.concurrent.ExecutionException: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+		at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+		at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.getResponseContext(ResponseWriter.java:276)
+		... 46 more
+	Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+		at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+		at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+		at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+		at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+		at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+		at controlador.Conexion.getConexion(Conexion.java:44)
+		at controlador.CarritoResource.obtenerTodos(CarritoResource.java:21)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:146)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:189)
+		at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:219)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+		... 33 more
+	Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+		at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+		at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+		at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+		at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+		at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+		at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
+		at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
+		at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+		... 51 more
+	Caused by: java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:752)
+		at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+		at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+		... 54 more
+22-Jul-2025 09:28:08.943 WARNING [http-nio-8080-exec-16] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+22-Jul-2025 09:28:08.943 WARNING [http-nio-8080-exec-16] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 09:28:09.455 INFO [http-nio-8080-exec-16] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+22-Jul-2025 09:28:09.467 INFO [http-nio-8080-exec-19] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+22-Jul-2025 09:28:09.468 WARNING [http-nio-8080-exec-19] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+22-Jul-2025 09:28:10.321 INFO [http-nio-8080-exec-19] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+22-Jul-2025 09:28:10.993 WARNING [http-nio-8080-exec-19] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:28:10.995 WARNING [http-nio-8080-exec-19] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:28:10.996 WARNING [http-nio-8080-exec-19] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:28:10.997 WARNING [http-nio-8080-exec-19] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:28:10.997 WARNING [http-nio-8080-exec-19] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:28:10.998 WARNING [http-nio-8080-exec-19] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:28:10.998 WARNING [http-nio-8080-exec-19] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:28:10.999 WARNING [http-nio-8080-exec-19] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:28:10.999 WARNING [http-nio-8080-exec-19] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:28:10.999 WARNING [http-nio-8080-exec-19] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:28:11.000 WARNING [http-nio-8080-exec-19] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:28:11.000 WARNING [http-nio-8080-exec-19] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:28:11.084 WARNING [http-nio-8080-exec-19] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+22-Jul-2025 09:28:11.342 INFO [http-nio-8080-exec-19] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.875] ms
+22-Jul-2025 09:28:11.345 INFO [http-nio-8080-exec-17] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+22-Jul-2025 09:28:13.107 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 09:29:13.884 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.ServerRuntime$Responder.process An exception mapping did not successfully produce and processed a response. Logging the exception propagated to the default exception mapper.
+	java.sql.SQLException: Data truncated for column 'estado' at row 1
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+		at modelo.CarritoDAO.insertar(CarritoDAO.java:48)
+		at controlador.CarritoResource.agregarCarrito(CarritoResource.java:31)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:146)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:189)
+		at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+		at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+		at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+		at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+		at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+		at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1773)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:59)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 09:29:14.096 SEVERE [http-nio-8080-exec-23] org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse Error while closing the output stream in order to commit response.
+	org.glassfish.jersey.server.ContainerException: java.util.concurrent.ExecutionException: java.sql.SQLException: Data truncated for column 'estado' at row 1
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.getResponseContext(ResponseWriter.java:278)
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.writeResponseStatusAndHeaders(ResponseWriter.java:128)
+		at org.glassfish.jersey.server.ServerRuntime$Responder$1.getOutputStream(ServerRuntime.java:667)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:171)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(CommittingOutputStream.java:276)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.commit(CommittingOutputStream.java:232)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.close(CommittingOutputStream.java:247)
+		at org.glassfish.jersey.message.internal.OutboundMessageContext.close(OutboundMessageContext.java:865)
+		at org.glassfish.jersey.server.ContainerResponse.close(ContainerResponse.java:403)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse(ServerRuntime.java:749)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.processResponse(ServerRuntime.java:385)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.processResponseWithDefaultExceptionMapper(ServerRuntime.java:633)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:458)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:269)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+		at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+		at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+		at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+		at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+		at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1773)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:59)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+	Caused by: java.util.concurrent.ExecutionException: java.sql.SQLException: Data truncated for column 'estado' at row 1
+		at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+		at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.getResponseContext(ResponseWriter.java:276)
+		... 46 more
+	Caused by: java.sql.SQLException: Data truncated for column 'estado' at row 1
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+		at modelo.CarritoDAO.insertar(CarritoDAO.java:48)
+		at controlador.CarritoResource.agregarCarrito(CarritoResource.java:31)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:146)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:189)
+		at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+		... 33 more
+22-Jul-2025 09:43:16.260 WARNING [http-nio-8080-exec-24] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+22-Jul-2025 09:43:16.260 WARNING [http-nio-8080-exec-24] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 09:43:16.764 INFO [http-nio-8080-exec-24] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+22-Jul-2025 09:43:16.775 INFO [http-nio-8080-exec-27] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+22-Jul-2025 09:43:16.776 WARNING [http-nio-8080-exec-27] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+22-Jul-2025 09:43:16.972 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 09:43:16.973 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 09:43:17.689 INFO [http-nio-8080-exec-27] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+22-Jul-2025 09:43:18.170 WARNING [http-nio-8080-exec-27] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:43:18.172 WARNING [http-nio-8080-exec-27] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:43:18.173 WARNING [http-nio-8080-exec-27] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:43:18.173 WARNING [http-nio-8080-exec-27] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:43:18.174 WARNING [http-nio-8080-exec-27] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:43:18.174 WARNING [http-nio-8080-exec-27] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:43:18.175 WARNING [http-nio-8080-exec-27] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:43:18.175 WARNING [http-nio-8080-exec-27] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:43:18.176 WARNING [http-nio-8080-exec-27] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:43:18.176 WARNING [http-nio-8080-exec-27] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:43:18.177 WARNING [http-nio-8080-exec-27] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:43:18.177 WARNING [http-nio-8080-exec-27] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:43:18.177 WARNING [http-nio-8080-exec-27] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 09:43:18.260 WARNING [http-nio-8080-exec-27] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+22-Jul-2025 09:43:18.512 INFO [http-nio-8080-exec-27] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.737] ms
+22-Jul-2025 09:43:18.514 INFO [http-nio-8080-exec-22] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+22-Jul-2025 11:04:14.740 WARNING [http-nio-8080-exec-39] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+22-Jul-2025 11:04:14.740 WARNING [http-nio-8080-exec-39] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 11:04:15.255 INFO [http-nio-8080-exec-39] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+22-Jul-2025 11:04:15.281 INFO [http-nio-8080-exec-31] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+22-Jul-2025 11:04:15.283 WARNING [http-nio-8080-exec-31] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+22-Jul-2025 11:04:16.140 INFO [http-nio-8080-exec-31] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+22-Jul-2025 11:04:16.618 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 11:04:16.619 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 11:04:16.620 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 11:04:16.620 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 11:04:16.621 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 11:04:16.621 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 11:04:16.621 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 11:04:16.622 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 11:04:16.622 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 11:04:16.622 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 11:04:16.623 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 11:04:16.623 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 11:04:16.623 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 11:04:16.624 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 11:04:16.701 WARNING [http-nio-8080-exec-31] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+22-Jul-2025 11:04:16.842 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 11:04:16.969 INFO [http-nio-8080-exec-31] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.687] ms
+22-Jul-2025 11:04:16.972 INFO [http-nio-8080-exec-36] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+22-Jul-2025 14:11:34.906 WARNING [http-nio-8080-exec-41] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+22-Jul-2025 14:11:34.907 WARNING [http-nio-8080-exec-41] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 14:11:35.422 INFO [http-nio-8080-exec-41] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+22-Jul-2025 14:11:35.443 INFO [http-nio-8080-exec-44] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+22-Jul-2025 14:11:35.446 WARNING [http-nio-8080-exec-44] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+22-Jul-2025 14:11:36.028 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 14:11:36.327 INFO [http-nio-8080-exec-44] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+22-Jul-2025 14:11:36.795 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.797 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.798 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.798 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.798 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.799 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.799 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.800 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.800 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.800 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.801 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.801 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.802 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.802 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.802 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 14:11:36.883 WARNING [http-nio-8080-exec-44] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+22-Jul-2025 14:11:37.133 INFO [http-nio-8080-exec-44] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.690] ms
+22-Jul-2025 14:11:37.136 INFO [http-nio-8080-exec-46] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+22-Jul-2025 14:12:12.257 WARNING [http-nio-8080-exec-52] org.glassfish.jersey.server.ServerRuntime$Responder.process An exception mapping did not successfully produce and processed a response. Logging the exception propagated to the default exception mapper.
+	java.sql.SQLException: Data truncated for column 'estado' at row 1
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+		at modelo.CarritoDAO.insertar(CarritoDAO.java:48)
+		at controlador.CarritoResource.agregarCarrito(CarritoResource.java:31)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:146)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:189)
+		at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+		at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+		at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+		at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+		at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+		at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1773)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:59)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 14:12:12.472 SEVERE [http-nio-8080-exec-52] org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse Error while closing the output stream in order to commit response.
+	org.glassfish.jersey.server.ContainerException: java.util.concurrent.ExecutionException: java.sql.SQLException: Data truncated for column 'estado' at row 1
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.getResponseContext(ResponseWriter.java:278)
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.writeResponseStatusAndHeaders(ResponseWriter.java:128)
+		at org.glassfish.jersey.server.ServerRuntime$Responder$1.getOutputStream(ServerRuntime.java:667)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:171)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(CommittingOutputStream.java:276)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.commit(CommittingOutputStream.java:232)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.close(CommittingOutputStream.java:247)
+		at org.glassfish.jersey.message.internal.OutboundMessageContext.close(OutboundMessageContext.java:865)
+		at org.glassfish.jersey.server.ContainerResponse.close(ContainerResponse.java:403)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse(ServerRuntime.java:749)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.processResponse(ServerRuntime.java:385)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.processResponseWithDefaultExceptionMapper(ServerRuntime.java:633)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:458)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:269)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+		at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+		at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+		at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+		at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+		at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1773)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:59)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+	Caused by: java.util.concurrent.ExecutionException: java.sql.SQLException: Data truncated for column 'estado' at row 1
+		at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+		at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.getResponseContext(ResponseWriter.java:276)
+		... 46 more
+	Caused by: java.sql.SQLException: Data truncated for column 'estado' at row 1
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+		at modelo.CarritoDAO.insertar(CarritoDAO.java:48)
+		at controlador.CarritoResource.agregarCarrito(CarritoResource.java:31)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:146)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:189)
+		at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+		... 33 more
+22-Jul-2025 14:13:10.586 WARNING [http-nio-8080-exec-54] org.glassfish.jersey.server.ServerRuntime$Responder.process An exception mapping did not successfully produce and processed a response. Logging the exception propagated to the default exception mapper.
+	jakarta.ws.rs.ProcessingException: Error deserializing object from entity stream.
+		at org.glassfish.jersey.jsonb.internal.JsonBindingProvider.readFrom(JsonBindingProvider.java:92)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.invokeReadFrom(ReaderInterceptorExecutor.java:233)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.aroundReadFrom(ReaderInterceptorExecutor.java:212)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+		at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundReadFrom(MappableExceptionWrapperInterceptor.java:49)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+		at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1072)
+		at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:919)
+		at org.glassfish.jersey.server.ContainerRequest.readEntity(ContainerRequest.java:290)
+		at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:73)
+		at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:56)
+		at org.glassfish.jersey.server.spi.internal.ParamValueFactoryWithSource.apply(ParamValueFactoryWithSource.java:50)
+		at org.glassfish.jersey.server.spi.internal.ParameterValueHelper.getParameterValues(ParameterValueHelper.java:68)
+		at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$AbstractMethodParamInvoker.getParamValues(JavaResourceMethodDispatcherProvider.java:109)
+		at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+		at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+		at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+		at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+		at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+		at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1773)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:59)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+	Caused by: jakarta.json.bind.JsonbException: Unable to deserialize property 'id_venta' because of: Error setting value on: modelo.Carrito@58340273
+		at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:80)
+		at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:31)
+		at org.eclipse.yasson.internal.deserializer.DefaultObjectInstanceCreator.deserialize(DefaultObjectInstanceCreator.java:57)
+		at org.eclipse.yasson.internal.deserializer.DefaultObjectInstanceCreator.deserialize(DefaultObjectInstanceCreator.java:29)
+		at org.eclipse.yasson.internal.deserializer.PositionChecker.deserialize(PositionChecker.java:85)
+		at org.eclipse.yasson.internal.deserializer.PositionChecker.deserialize(PositionChecker.java:34)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:46)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:26)
+		at org.eclipse.yasson.internal.DeserializationContextImpl.deserializeItem(DeserializationContextImpl.java:138)
+		at org.eclipse.yasson.internal.DeserializationContextImpl.deserialize(DeserializationContextImpl.java:127)
+		at org.eclipse.yasson.internal.JsonBinding.deserialize(JsonBinding.java:55)
+		at org.eclipse.yasson.internal.JsonBinding.fromJson(JsonBinding.java:102)
+		at org.glassfish.jersey.jsonb.internal.JsonBindingProvider.readFrom(JsonBindingProvider.java:90)
+		... 52 more
+	Caused by: jakarta.json.bind.JsonbException: Error setting value on: modelo.Carrito@58340273
+		at org.eclipse.yasson.internal.deserializer.ValueSetterDeserializer.deserialize(ValueSetterDeserializer.java:40)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:48)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:26)
+		at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:78)
+		... 64 more
+	Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.Number.intValue()" because the return value of "sun.invoke.util.ValueConversions.primitiveConversion(sun.invoke.util.Wrapper, Object, boolean)" is null
+		at java.base/sun.invoke.util.ValueConversions.unboxInteger(ValueConversions.java:81)
+		at org.eclipse.yasson.internal.deserializer.ValueSetterDeserializer.deserialize(ValueSetterDeserializer.java:37)
+		... 67 more
+22-Jul-2025 14:13:10.724 SEVERE [http-nio-8080-exec-54] org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse Error while closing the output stream in order to commit response.
+	org.glassfish.jersey.server.ContainerException: java.util.concurrent.ExecutionException: jakarta.ws.rs.ProcessingException: Error deserializing object from entity stream.
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.getResponseContext(ResponseWriter.java:278)
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.writeResponseStatusAndHeaders(ResponseWriter.java:128)
+		at org.glassfish.jersey.server.ServerRuntime$Responder$1.getOutputStream(ServerRuntime.java:667)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:171)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(CommittingOutputStream.java:276)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.commit(CommittingOutputStream.java:232)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.close(CommittingOutputStream.java:247)
+		at org.glassfish.jersey.message.internal.OutboundMessageContext.close(OutboundMessageContext.java:865)
+		at org.glassfish.jersey.server.ContainerResponse.close(ContainerResponse.java:403)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse(ServerRuntime.java:749)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.processResponse(ServerRuntime.java:385)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.processResponseWithDefaultExceptionMapper(ServerRuntime.java:633)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:458)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:269)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+		at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+		at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+		at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+		at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+		at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1773)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:59)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+	Caused by: java.util.concurrent.ExecutionException: jakarta.ws.rs.ProcessingException: Error deserializing object from entity stream.
+		at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+		at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.getResponseContext(ResponseWriter.java:276)
+		... 46 more
+	Caused by: jakarta.ws.rs.ProcessingException: Error deserializing object from entity stream.
+		at org.glassfish.jersey.jsonb.internal.JsonBindingProvider.readFrom(JsonBindingProvider.java:92)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.invokeReadFrom(ReaderInterceptorExecutor.java:233)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.aroundReadFrom(ReaderInterceptorExecutor.java:212)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+		at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundReadFrom(MappableExceptionWrapperInterceptor.java:49)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+		at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1072)
+		at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:919)
+		at org.glassfish.jersey.server.ContainerRequest.readEntity(ContainerRequest.java:290)
+		at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:73)
+		at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:56)
+		at org.glassfish.jersey.server.spi.internal.ParamValueFactoryWithSource.apply(ParamValueFactoryWithSource.java:50)
+		at org.glassfish.jersey.server.spi.internal.ParameterValueHelper.getParameterValues(ParameterValueHelper.java:68)
+		at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$AbstractMethodParamInvoker.getParamValues(JavaResourceMethodDispatcherProvider.java:109)
+		at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+		... 33 more
+	Caused by: jakarta.json.bind.JsonbException: Unable to deserialize property 'id_venta' because of: Error setting value on: modelo.Carrito@58340273
+		at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:80)
+		at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:31)
+		at org.eclipse.yasson.internal.deserializer.DefaultObjectInstanceCreator.deserialize(DefaultObjectInstanceCreator.java:57)
+		at org.eclipse.yasson.internal.deserializer.DefaultObjectInstanceCreator.deserialize(DefaultObjectInstanceCreator.java:29)
+		at org.eclipse.yasson.internal.deserializer.PositionChecker.deserialize(PositionChecker.java:85)
+		at org.eclipse.yasson.internal.deserializer.PositionChecker.deserialize(PositionChecker.java:34)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:46)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:26)
+		at org.eclipse.yasson.internal.DeserializationContextImpl.deserializeItem(DeserializationContextImpl.java:138)
+		at org.eclipse.yasson.internal.DeserializationContextImpl.deserialize(DeserializationContextImpl.java:127)
+		at org.eclipse.yasson.internal.JsonBinding.deserialize(JsonBinding.java:55)
+		at org.eclipse.yasson.internal.JsonBinding.fromJson(JsonBinding.java:102)
+		at org.glassfish.jersey.jsonb.internal.JsonBindingProvider.readFrom(JsonBindingProvider.java:90)
+		... 52 more
+	Caused by: jakarta.json.bind.JsonbException: Error setting value on: modelo.Carrito@58340273
+		at org.eclipse.yasson.internal.deserializer.ValueSetterDeserializer.deserialize(ValueSetterDeserializer.java:40)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:48)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:26)
+		at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:78)
+		... 64 more
+	Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.Number.intValue()" because the return value of "sun.invoke.util.ValueConversions.primitiveConversion(sun.invoke.util.Wrapper, Object, boolean)" is null
+		at java.base/sun.invoke.util.ValueConversions.unboxInteger(ValueConversions.java:81)
+		at org.eclipse.yasson.internal.deserializer.ValueSetterDeserializer.deserialize(ValueSetterDeserializer.java:37)
+		... 67 more
+22-Jul-2025 14:13:33.034 WARNING [http-nio-8080-exec-51] org.glassfish.jersey.server.ServerRuntime$Responder.process An exception mapping did not successfully produce and processed a response. Logging the exception propagated to the default exception mapper.
+	jakarta.ws.rs.ProcessingException: Error deserializing object from entity stream.
+		at org.glassfish.jersey.jsonb.internal.JsonBindingProvider.readFrom(JsonBindingProvider.java:92)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.invokeReadFrom(ReaderInterceptorExecutor.java:233)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.aroundReadFrom(ReaderInterceptorExecutor.java:212)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+		at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundReadFrom(MappableExceptionWrapperInterceptor.java:49)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+		at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1072)
+		at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:919)
+		at org.glassfish.jersey.server.ContainerRequest.readEntity(ContainerRequest.java:290)
+		at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:73)
+		at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:56)
+		at org.glassfish.jersey.server.spi.internal.ParamValueFactoryWithSource.apply(ParamValueFactoryWithSource.java:50)
+		at org.glassfish.jersey.server.spi.internal.ParameterValueHelper.getParameterValues(ParameterValueHelper.java:68)
+		at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$AbstractMethodParamInvoker.getParamValues(JavaResourceMethodDispatcherProvider.java:109)
+		at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+		at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+		at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+		at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+		at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+		at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1773)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:59)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+	Caused by: jakarta.json.bind.JsonbException: Unable to deserialize property 'id_venta' because of: Error setting value on: modelo.Carrito@2c79f891
+		at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:80)
+		at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:31)
+		at org.eclipse.yasson.internal.deserializer.DefaultObjectInstanceCreator.deserialize(DefaultObjectInstanceCreator.java:57)
+		at org.eclipse.yasson.internal.deserializer.DefaultObjectInstanceCreator.deserialize(DefaultObjectInstanceCreator.java:29)
+		at org.eclipse.yasson.internal.deserializer.PositionChecker.deserialize(PositionChecker.java:85)
+		at org.eclipse.yasson.internal.deserializer.PositionChecker.deserialize(PositionChecker.java:34)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:46)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:26)
+		at org.eclipse.yasson.internal.DeserializationContextImpl.deserializeItem(DeserializationContextImpl.java:138)
+		at org.eclipse.yasson.internal.DeserializationContextImpl.deserialize(DeserializationContextImpl.java:127)
+		at org.eclipse.yasson.internal.JsonBinding.deserialize(JsonBinding.java:55)
+		at org.eclipse.yasson.internal.JsonBinding.fromJson(JsonBinding.java:102)
+		at org.glassfish.jersey.jsonb.internal.JsonBindingProvider.readFrom(JsonBindingProvider.java:90)
+		... 52 more
+	Caused by: jakarta.json.bind.JsonbException: Error setting value on: modelo.Carrito@2c79f891
+		at org.eclipse.yasson.internal.deserializer.ValueSetterDeserializer.deserialize(ValueSetterDeserializer.java:40)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:48)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:26)
+		at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:78)
+		... 64 more
+	Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.Number.intValue()" because the return value of "sun.invoke.util.ValueConversions.primitiveConversion(sun.invoke.util.Wrapper, Object, boolean)" is null
+		at java.base/sun.invoke.util.ValueConversions.unboxInteger(ValueConversions.java:81)
+		at org.eclipse.yasson.internal.deserializer.ValueSetterDeserializer.deserialize(ValueSetterDeserializer.java:37)
+		... 67 more
+22-Jul-2025 14:13:33.187 SEVERE [http-nio-8080-exec-51] org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse Error while closing the output stream in order to commit response.
+	org.glassfish.jersey.server.ContainerException: java.util.concurrent.ExecutionException: jakarta.ws.rs.ProcessingException: Error deserializing object from entity stream.
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.getResponseContext(ResponseWriter.java:278)
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.writeResponseStatusAndHeaders(ResponseWriter.java:128)
+		at org.glassfish.jersey.server.ServerRuntime$Responder$1.getOutputStream(ServerRuntime.java:667)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.commitStream(CommittingOutputStream.java:171)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.flushBuffer(CommittingOutputStream.java:276)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.commit(CommittingOutputStream.java:232)
+		at org.glassfish.jersey.message.internal.CommittingOutputStream.close(CommittingOutputStream.java:247)
+		at org.glassfish.jersey.message.internal.OutboundMessageContext.close(OutboundMessageContext.java:865)
+		at org.glassfish.jersey.server.ContainerResponse.close(ContainerResponse.java:403)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse(ServerRuntime.java:749)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.processResponse(ServerRuntime.java:385)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.processResponseWithDefaultExceptionMapper(ServerRuntime.java:633)
+		at org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:458)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:269)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+		at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+		at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+		at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+		at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+		at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+		at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+		at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+		at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1773)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:59)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+	Caused by: java.util.concurrent.ExecutionException: jakarta.ws.rs.ProcessingException: Error deserializing object from entity stream.
+		at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+		at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+		at org.glassfish.jersey.servlet.internal.ResponseWriter.getResponseContext(ResponseWriter.java:276)
+		... 46 more
+	Caused by: jakarta.ws.rs.ProcessingException: Error deserializing object from entity stream.
+		at org.glassfish.jersey.jsonb.internal.JsonBindingProvider.readFrom(JsonBindingProvider.java:92)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.invokeReadFrom(ReaderInterceptorExecutor.java:233)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.aroundReadFrom(ReaderInterceptorExecutor.java:212)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+		at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundReadFrom(MappableExceptionWrapperInterceptor.java:49)
+		at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+		at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1072)
+		at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:919)
+		at org.glassfish.jersey.server.ContainerRequest.readEntity(ContainerRequest.java:290)
+		at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:73)
+		at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:56)
+		at org.glassfish.jersey.server.spi.internal.ParamValueFactoryWithSource.apply(ParamValueFactoryWithSource.java:50)
+		at org.glassfish.jersey.server.spi.internal.ParameterValueHelper.getParameterValues(ParameterValueHelper.java:68)
+		at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$AbstractMethodParamInvoker.getParamValues(JavaResourceMethodDispatcherProvider.java:109)
+		at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+		at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+		at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+		at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+		... 33 more
+	Caused by: jakarta.json.bind.JsonbException: Unable to deserialize property 'id_venta' because of: Error setting value on: modelo.Carrito@2c79f891
+		at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:80)
+		at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:31)
+		at org.eclipse.yasson.internal.deserializer.DefaultObjectInstanceCreator.deserialize(DefaultObjectInstanceCreator.java:57)
+		at org.eclipse.yasson.internal.deserializer.DefaultObjectInstanceCreator.deserialize(DefaultObjectInstanceCreator.java:29)
+		at org.eclipse.yasson.internal.deserializer.PositionChecker.deserialize(PositionChecker.java:85)
+		at org.eclipse.yasson.internal.deserializer.PositionChecker.deserialize(PositionChecker.java:34)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:46)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:26)
+		at org.eclipse.yasson.internal.DeserializationContextImpl.deserializeItem(DeserializationContextImpl.java:138)
+		at org.eclipse.yasson.internal.DeserializationContextImpl.deserialize(DeserializationContextImpl.java:127)
+		at org.eclipse.yasson.internal.JsonBinding.deserialize(JsonBinding.java:55)
+		at org.eclipse.yasson.internal.JsonBinding.fromJson(JsonBinding.java:102)
+		at org.glassfish.jersey.jsonb.internal.JsonBindingProvider.readFrom(JsonBindingProvider.java:90)
+		... 52 more
+	Caused by: jakarta.json.bind.JsonbException: Error setting value on: modelo.Carrito@2c79f891
+		at org.eclipse.yasson.internal.deserializer.ValueSetterDeserializer.deserialize(ValueSetterDeserializer.java:40)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:48)
+		at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:26)
+		at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:78)
+		... 64 more
+	Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.Number.intValue()" because the return value of "sun.invoke.util.ValueConversions.primitiveConversion(sun.invoke.util.Wrapper, Object, boolean)" is null
+		at java.base/sun.invoke.util.ValueConversions.unboxInteger(ValueConversions.java:81)
+		at org.eclipse.yasson.internal.deserializer.ValueSetterDeserializer.deserialize(ValueSetterDeserializer.java:37)
+		... 67 more
+22-Jul-2025 15:03:10.137 WARNING [http-nio-8080-exec-59] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+22-Jul-2025 15:03:10.137 WARNING [http-nio-8080-exec-59] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 15:03:10.645 INFO [http-nio-8080-exec-59] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+22-Jul-2025 15:03:10.655 INFO [http-nio-8080-exec-55] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+22-Jul-2025 15:03:10.657 WARNING [http-nio-8080-exec-55] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+22-Jul-2025 15:03:11.508 INFO [http-nio-8080-exec-55] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+22-Jul-2025 15:03:11.992 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:11.995 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:11.995 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:11.995 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:11.996 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:11.996 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:11.996 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:11.997 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:11.997 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:11.997 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:11.997 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:11.997 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:11.998 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:11.998 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:11.998 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:03:12.079 WARNING [http-nio-8080-exec-55] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+22-Jul-2025 15:03:12.333 INFO [http-nio-8080-exec-55] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.678] ms
+22-Jul-2025 15:03:12.336 INFO [http-nio-8080-exec-60] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+22-Jul-2025 15:03:14.225 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 15:09:15.333 WARNING [http-nio-8080-exec-62] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+22-Jul-2025 15:09:15.333 WARNING [http-nio-8080-exec-62] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 15:09:15.849 INFO [http-nio-8080-exec-62] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+22-Jul-2025 15:09:17.553 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 15:09:48.985 INFO [http-nio-8080-exec-74] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+22-Jul-2025 15:09:48.986 WARNING [http-nio-8080-exec-74] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+22-Jul-2025 15:09:49.821 INFO [http-nio-8080-exec-74] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+22-Jul-2025 15:09:50.279 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.281 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.281 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.282 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.282 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.282 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.283 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.283 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.284 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.284 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.285 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.285 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.286 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.286 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.286 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 15:09:50.365 WARNING [http-nio-8080-exec-74] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+22-Jul-2025 15:09:50.602 INFO [http-nio-8080-exec-74] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.617] ms
+22-Jul-2025 15:09:50.604 INFO [http-nio-8080-exec-63] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+22-Jul-2025 15:51:04.565 WARNING [http-nio-8080-exec-79] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+22-Jul-2025 15:51:04.565 WARNING [http-nio-8080-exec-79] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 15:51:05.073 INFO [http-nio-8080-exec-79] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+22-Jul-2025 15:51:08.204 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 16:39:20.356 INFO [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+22-Jul-2025 16:39:20.357 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+22-Jul-2025 16:39:20.366 INFO [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+22-Jul-2025 16:39:20.373 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+22-Jul-2025 16:39:20.377 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+22-Jul-2025 17:58:27.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.8
+22-Jul-2025 17:58:27.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jun 5 2025 17:49:55 UTC
+22-Jul-2025 17:58:27.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.8.0
+22-Jul-2025 17:58:27.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+22-Jul-2025 17:58:27.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+22-Jul-2025 17:58:27.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+22-Jul-2025 17:58:27.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-22
+22-Jul-2025 17:58:27.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       22.0.2+9-70
+22-Jul-2025 17:58:27.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+22-Jul-2025 17:58:27.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+22-Jul-2025 17:58:27.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+22-Jul-2025 17:58:27.301 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\logging.properties
+22-Jul-2025 17:58:27.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Jul-2025 17:58:27.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+22-Jul-2025 17:58:27.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+22-Jul-2025 17:58:27.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+22-Jul-2025 17:58:27.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+22-Jul-2025 17:58:27.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+22-Jul-2025 17:58:27.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+22-Jul-2025 17:58:27.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+22-Jul-2025 17:58:27.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+22-Jul-2025 17:58:27.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+22-Jul-2025 17:58:27.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+22-Jul-2025 17:58:27.392 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\temp
+22-Jul-2025 17:58:27.401 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [2.0.9] con la versión APR [1.7.6].
+22-Jul-2025 17:58:27.420 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.5.0 8 Apr 2025]
+22-Jul-2025 17:58:27.651 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+22-Jul-2025 17:58:27.668 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [555] milliseconds
+22-Jul-2025 17:58:27.709 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+22-Jul-2025 17:58:27.709 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.8]
+22-Jul-2025 17:58:27.718 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\docs] de la aplicación web
+22-Jul-2025 17:58:27.998 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\docs] has finished in [277] ms
+22-Jul-2025 17:58:27.998 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\examples] de la aplicación web
+22-Jul-2025 17:58:28.387 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\examples] has finished in [389] ms
+22-Jul-2025 17:58:28.388 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\host-manager] de la aplicación web
+22-Jul-2025 17:58:28.419 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\host-manager] has finished in [30] ms
+22-Jul-2025 17:58:28.419 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\manager] de la aplicación web
+22-Jul-2025 17:58:28.447 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\manager] has finished in [28] ms
+22-Jul-2025 17:58:28.448 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\ROOT] de la aplicación web
+22-Jul-2025 17:58:28.472 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\ROOT] has finished in [24] ms
+22-Jul-2025 17:58:28.475 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+22-Jul-2025 17:58:28.495 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [825] milliseconds
+22-Jul-2025 17:58:30.552 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+22-Jul-2025 17:58:30.554 WARNING [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+22-Jul-2025 17:58:31.582 INFO [http-nio-8080-exec-10] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+22-Jul-2025 17:58:32.224 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.229 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.230 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.231 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.231 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.232 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.233 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.233 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.234 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.234 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.235 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.235 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.236 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.236 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.236 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 17:58:32.350 WARNING [http-nio-8080-exec-10] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+22-Jul-2025 17:58:32.715 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [2.163] ms
+22-Jul-2025 17:58:32.718 INFO [http-nio-8080-exec-1] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+22-Jul-2025 18:00:13.614 WARNING [http-nio-8080-exec-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+22-Jul-2025 18:00:13.614 WARNING [http-nio-8080-exec-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 18:00:14.136 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+22-Jul-2025 18:00:14.147 INFO [http-nio-8080-exec-8] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+22-Jul-2025 18:00:14.148 WARNING [http-nio-8080-exec-8] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+22-Jul-2025 18:00:15.042 INFO [http-nio-8080-exec-8] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+22-Jul-2025 18:00:15.566 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.568 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.569 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.570 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.570 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.571 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.571 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.572 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.573 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.573 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.574 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.574 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.574 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.575 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.575 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:00:15.657 WARNING [http-nio-8080-exec-8] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+22-Jul-2025 18:00:15.917 INFO [http-nio-8080-exec-8] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.770] ms
+22-Jul-2025 18:00:15.920 INFO [http-nio-8080-exec-9] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+22-Jul-2025 18:00:17.222 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 18:06:38.068 WARNING [http-nio-8080-exec-16] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+22-Jul-2025 18:06:38.069 WARNING [http-nio-8080-exec-16] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 18:06:38.577 INFO [http-nio-8080-exec-16] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+22-Jul-2025 18:06:38.589 INFO [http-nio-8080-exec-20] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+22-Jul-2025 18:06:38.590 WARNING [http-nio-8080-exec-20] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+22-Jul-2025 18:06:39.437 INFO [http-nio-8080-exec-20] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+22-Jul-2025 18:06:39.824 WARNING [http-nio-8080-exec-20] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+22-Jul-2025 18:06:40.125 INFO [http-nio-8080-exec-20] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.536] ms
+22-Jul-2025 18:06:40.127 INFO [http-nio-8080-exec-18] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+22-Jul-2025 18:06:41.046 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 18:09:14.975 WARNING [http-nio-8080-exec-24] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+22-Jul-2025 18:09:14.975 WARNING [http-nio-8080-exec-24] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 18:09:15.485 INFO [http-nio-8080-exec-24] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+22-Jul-2025 18:09:15.495 INFO [http-nio-8080-exec-29] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+22-Jul-2025 18:09:15.496 WARNING [http-nio-8080-exec-29] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+22-Jul-2025 18:09:15.688 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 18:09:16.343 INFO [http-nio-8080-exec-29] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+22-Jul-2025 18:09:16.829 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.831 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.831 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.832 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.832 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.833 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.833 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.833 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.834 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.834 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.834 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.835 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.835 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.836 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.836 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+22-Jul-2025 18:09:16.915 WARNING [http-nio-8080-exec-29] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+22-Jul-2025 18:09:17.189 INFO [http-nio-8080-exec-29] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.694] ms
+22-Jul-2025 18:09:17.191 INFO [http-nio-8080-exec-27] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+22-Jul-2025 18:56:25.501 WARNING [http-nio-8080-exec-40] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+22-Jul-2025 18:56:25.501 WARNING [http-nio-8080-exec-40] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 18:56:26.010 INFO [http-nio-8080-exec-40] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+22-Jul-2025 18:56:27.447 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+22-Jul-2025 20:38:22.887 INFO [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+22-Jul-2025 20:38:22.888 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+22-Jul-2025 20:38:22.896 INFO [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+22-Jul-2025 20:38:22.904 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+22-Jul-2025 20:38:22.908 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
