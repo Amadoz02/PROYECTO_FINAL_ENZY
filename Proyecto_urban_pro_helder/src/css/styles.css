@@ -3,6 +3,7 @@
 @import url(./home.css);
 @import url(./page_bienvenida.css);
 @import url(./vistas_dinamicas.css);
+@import url(./cards.css);
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_left_alt");
 :root {
   --color-black: #000;
@@ -45,17 +46,29 @@
 
 /* === REGISTRO === */
 .body--register {
-  padding: 2rem;
-  background-image: url('../resources/img24.jpg');
-  /*que se pueda escrolear el contenido, solo una parte que es el formulario de registro que sea estatico*/
+
+  background-image: url('../resources/img23.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   position: relative;
-   overflow: auto;
-   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 
   
 }
+.body--register::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 0;
+}
 .register__container {
-  margin: 15% 0 0 0;
+  margin: 1% 0 0 0;
   background-color: rgba(0, 0, 0, 0.85);
   padding: 3rem 2.5rem;
   border-radius: 20px;

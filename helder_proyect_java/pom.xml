@@ -35,6 +35,12 @@
             <artifactId>jersey-media-jaxb</artifactId>
             <version>${jersey.version}</version> <!-- Usa tu versión -->
         </dependency>
+        <!-- Jersey Multipart para subir archivos -->
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-multipart</artifactId>
+            <version>${jersey.version}</version> <!-- Asegúrate de usar la misma versión de Jersey que el resto del proyecto -->
+        </dependency>
 
 
         <dependency>

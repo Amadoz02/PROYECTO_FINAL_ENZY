@@ -2,24 +2,41 @@
 /* MAIN SECTION */
 .body--welcome {
   background-image: url('../resources/img24.jpg');
-
-
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+.body--welcome::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 0;
 }
 .welcome {
-  display: flex;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   z-index: 1;
 }
 
 /* CONTENT BOX */
 .welcome__content {
-  flex: 1;
   display: flex;
-  max-width: 90%;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 3rem 4rem;
+  background: rgba(0,0,0,0.75);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  padding: 3rem 2.5rem;
+  max-width: 50vw;
+  min-width: 320px;
+  width: 100%;
   animation: fadeInLeft 1.5s ease forwards;
   opacity: 0;
 }
@@ -27,10 +44,11 @@
 /* TITLE */
 .welcome__title {
   font-family: var(--font-title);
-  font-size: 5rem;
+  font-size: 4vw;
   color: var(--color-accent);
   margin-bottom: 1rem;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .welcome__brand {
@@ -39,16 +57,20 @@
 }
 
 /* TEXT */
+/* TEXT */
 .welcome__text {
   font-size: 1.2rem;
   margin-bottom: 0.1rem;
   margin-top: 1.5rem;
   color: var(--color-white);
   line-height: 1.5;
+  text-align: center;
 }
 .welcome__button{
+    width: 100%;
     max-width: 100%;
-    justify-content: start;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 /* ANIMATIONS */
 @keyframes fadeInLeft {

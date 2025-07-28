@@ -2,7 +2,7 @@ package modelo;
 
 import java.sql.*;
 import java.util.*;
-import controlador.Conexion;
+
 
 public class MetodoPagoDAO {
     private Connection con;

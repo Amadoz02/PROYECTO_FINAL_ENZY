@@ -6,7 +6,7 @@ import modelo.Genero;
 import modelo.GeneroDAO;
 import java.util.List;
 
-@Path("generos")
+@Path("/generos")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class GeneroResource {

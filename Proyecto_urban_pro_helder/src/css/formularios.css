@@ -5,6 +5,24 @@
   z-index: 1;
   
 }
+.body--login {
+  background-image: url('../resources/img24.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body--login::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 0;
+}
 
 .form__content {
   position: relative;
@@ -16,6 +34,10 @@
   width: 100%;
   animation: fadeInLeft 1s ease forwards;
   opacity: 0;
+}
+.form__content {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  max-width: 400px;
 }
 
 .form__title {
@@ -60,7 +82,7 @@
 }
 
 .form__link {
-  color: var(--color-light);
+  color: var(--color-white);
   font-size: 1.1rem;
   text-decoration: none;
   transition: color 0.3s ease;

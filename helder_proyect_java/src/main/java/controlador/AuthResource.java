@@ -60,9 +60,11 @@ public class AuthResource {
                                         .add("accessToken", accessToken)
                                         .add("refreshToken", refreshToken)
                                         .add("rol", rol)
+                                        .add("id_usuario", idUsuario) // ✅ Agregado aquí
                                         .build();
 
                                 return Response.ok(response.toString(), MediaType.APPLICATION_JSON).build();
+
                             } else {
                                 return Response.status(Response.Status.UNAUTHORIZED)
                                         .entity(Json.createObjectBuilder()

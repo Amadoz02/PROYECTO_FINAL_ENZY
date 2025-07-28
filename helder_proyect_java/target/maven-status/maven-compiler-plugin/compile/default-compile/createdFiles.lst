@@ -1,4 +1,5 @@
 controlador\Utilidades.class
+modelo\Imagen.class
 controlador\CategoriaResource.class
 controlador\VentaResource.class
 controlador\JwtUtil.class
@@ -6,15 +7,19 @@ controlador\ProductoResource.class
 controlador\GeneroResource.class
 modelo\UsuarioDAO.class
 controlador\ApplicationConfig.class
+modelo\Favorito.class
 controlador\Conexion.class
+modelo\FavoritoDAO.class
 controlador\UsuarioResource.class
 modelo\MetodoPago.class
 controlador\CarritoResource.class
 controlador\DireccionResource.class
+modelo\ImagenDAO.class
 modelo\Carrito.class
 controlador\TallaResource.class
 modelo\TallaDAO.class
 modelo\GeneroDAO.class
+controlador\ImagenResource.class
 modelo\CarritoDAO.class
 modelo\Genero.class
 controlador\MetodoPagoResource.class
@@ -23,6 +28,7 @@ modelo\Venta.class
 modelo\CategoriaDAO.class
 modelo\Categoria.class
 controlador\AuthResource.class
+controlador\FavoritoResource.class
 modelo\Talla.class
 modelo\DireccionDAO.class
 modelo\DetalleCarrito.class

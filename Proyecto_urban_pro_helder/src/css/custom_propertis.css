@@ -44,9 +44,6 @@
   font-family: var(--font-text);
   color: var(--color-white);
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -54,13 +51,6 @@
 }
 /* DARK OVERLAY */
 .body::before {
-  content: "";
-  inset: 0;
-  background-color: var(--color-overlay);
-  z-index: 0;
-  height: 100vh;
-  position: absolute;
-  position: fixed; /* Esto hace que el overlay se mueva junto al scroll principal */
-
-
+  /* Solo aplica overlay en login/register, no en home SPA */
 }
+

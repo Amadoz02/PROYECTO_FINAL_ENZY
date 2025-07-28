@@ -6,7 +6,9 @@ C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_ja
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\CorsFilter.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\DetalleCarritoResource.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\DireccionResource.java
+C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\FavoritoResource.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\GeneroResource.java
+C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\ImagenResource.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\JwtUtil.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\MetodoPagoResource.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\ProductoResource.java
@@ -23,8 +25,12 @@ C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_ja
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\DetalleCarritoDAO.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\Direccion.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\DireccionDAO.java
+C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\Favorito.java
+C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\FavoritoDAO.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\Genero.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\GeneroDAO.java
+C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\Imagen.java
+C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\ImagenDAO.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\MetodoPago.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\MetodoPagoDAO.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\Producto.java
