@@ -5,17 +5,17 @@ package modelo;
  * Representa un carrito de compras con usuario y venta asociada.
  */
 public class Carrito {
-    private int id_carrito;
-    private int id_cliente;
+    public int id_carrito;
+    public int id_cliente;
   
-    private int estado;
+    private String estado;
 
 
     // Getters y Setters
     public int getId_carrito() {
         return id_carrito;
     }
-    public int getEstado() {
+    public String getEstado() {
         return estado;
     }
 
@@ -30,7 +30,7 @@ public class Carrito {
     public void setId_usuario(int id_cliente) {
         this.id_cliente = id_cliente;
     }
-    public void setEstado(int estado) {
+    public void setEstado(String estado) {
         this.estado = estado;
     }
 }

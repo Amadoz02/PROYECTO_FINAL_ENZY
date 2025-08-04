@@ -1,0 +1,502 @@
+02-Aug-2025 00:24:15.159 INFO [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+02-Aug-2025 00:24:15.159 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+02-Aug-2025 00:24:15.177 INFO [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+02-Aug-2025 00:24:15.228 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [StockControl_API] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.io.WinNTFileSystem.canonicalize0(Native Method)
+ java.base/java.io.WinNTFileSystem.canonicalize(WinNTFileSystem.java:496)
+ java.base/java.io.File.getCanonicalPath(File.java:626)
+ org.apache.catalina.webresources.AbstractFileResourceSet.file(AbstractFileResourceSet.java:108)
+ org.apache.catalina.webresources.DirResourceSet.getResource(DirResourceSet.java:114)
+ org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:273)
+ org.apache.catalina.webresources.CachedResource.validateResource(CachedResource.java:108)
+ org.apache.catalina.webresources.Cache.getResource(Cache.java:96)
+ org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:212)
+ org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:221)
+ org.apache.catalina.loader.WebappClassLoaderBase.findResource(WebappClassLoaderBase.java:763)
+ org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:878)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 00:24:15.239 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+02-Aug-2025 00:24:15.239 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 00:24:15.239 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+02-Aug-2025 00:24:15.259 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+02-Aug-2025 00:24:15.320 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 00:24:18.328 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.8
+02-Aug-2025 00:24:18.330 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jun 5 2025 17:49:55 UTC
+02-Aug-2025 00:24:18.330 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.8.0
+02-Aug-2025 00:24:18.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+02-Aug-2025 00:24:18.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+02-Aug-2025 00:24:18.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+02-Aug-2025 00:24:18.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-22
+02-Aug-2025 00:24:18.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       22.0.2+9-70
+02-Aug-2025 00:24:18.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+02-Aug-2025 00:24:18.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+02-Aug-2025 00:24:18.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+02-Aug-2025 00:24:18.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\logging.properties
+02-Aug-2025 00:24:18.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Aug-2025 00:24:18.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+02-Aug-2025 00:24:18.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Aug-2025 00:24:18.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+02-Aug-2025 00:24:18.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+02-Aug-2025 00:24:18.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+02-Aug-2025 00:24:18.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Aug-2025 00:24:18.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Aug-2025 00:24:18.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+02-Aug-2025 00:24:18.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+02-Aug-2025 00:24:18.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+02-Aug-2025 00:24:18.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\temp
+02-Aug-2025 00:24:18.416 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [2.0.9] con la versión APR [1.7.6].
+02-Aug-2025 00:24:18.420 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.5.0 8 Apr 2025]
+02-Aug-2025 00:24:18.641 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+02-Aug-2025 00:24:18.657 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [480] milliseconds
+02-Aug-2025 00:24:18.693 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+02-Aug-2025 00:24:18.694 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.8]
+02-Aug-2025 00:24:18.701 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+02-Aug-2025 00:24:18.713 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+02-Aug-2025 00:24:19.994 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+02-Aug-2025 00:24:20.420 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.425 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.425 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.426 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.426 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.427 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.428 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.428 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.429 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:20.537 WARNING [main] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+02-Aug-2025 00:24:20.914 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [2.212] ms
+02-Aug-2025 00:24:20.914 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\StockControl_API.xml]
+02-Aug-2025 00:24:20.914 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/StockControl_API] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\StockControl_API.xml] has been ignored
+02-Aug-2025 00:24:21.743 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+02-Aug-2025 00:24:21.743 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\StockControl_API.xml] has finished in [829] ms
+02-Aug-2025 00:24:21.743 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\docs] de la aplicación web
+02-Aug-2025 00:24:21.774 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\docs] has finished in [31] ms
+02-Aug-2025 00:24:21.774 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\examples] de la aplicación web
+02-Aug-2025 00:24:22.060 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\examples] has finished in [286] ms
+02-Aug-2025 00:24:22.060 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\host-manager] de la aplicación web
+02-Aug-2025 00:24:22.086 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\host-manager] has finished in [25] ms
+02-Aug-2025 00:24:22.086 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\manager] de la aplicación web
+02-Aug-2025 00:24:22.110 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\manager] has finished in [24] ms
+02-Aug-2025 00:24:22.110 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\ROOT] de la aplicación web
+02-Aug-2025 00:24:22.128 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\ROOT] has finished in [18] ms
+02-Aug-2025 00:24:22.132 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+02-Aug-2025 00:24:22.146 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3487] milliseconds
+02-Aug-2025 00:24:30.167 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+02-Aug-2025 00:24:30.196 INFO [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+02-Aug-2025 00:24:30.196 WARNING [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+02-Aug-2025 00:24:31.171 INFO [http-nio-8080-exec-3] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+02-Aug-2025 00:24:31.495 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.495 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.495 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.495 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.495 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.495 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.511 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.511 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.511 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.512 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.512 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.512 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.512 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.513 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.513 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.513 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.513 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.514 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.514 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.514 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.515 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.521 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.522 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:24:31.608 WARNING [http-nio-8080-exec-3] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+02-Aug-2025 00:24:31.901 INFO [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.705] ms
+02-Aug-2025 00:24:31.901 INFO [http-nio-8080-exec-5] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+02-Aug-2025 00:26:13.498 WARNING [http-nio-8080-exec-15] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+02-Aug-2025 00:26:13.498 WARNING [http-nio-8080-exec-15] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 00:26:14.004 INFO [http-nio-8080-exec-15] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+02-Aug-2025 00:26:14.014 INFO [http-nio-8080-exec-17] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+02-Aug-2025 00:26:14.016 WARNING [http-nio-8080-exec-17] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+02-Aug-2025 00:26:14.239 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 00:26:14.917 INFO [http-nio-8080-exec-17] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+02-Aug-2025 00:26:15.204 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.221 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.221 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.222 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.222 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.222 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.223 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.223 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.223 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.224 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.224 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.224 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.225 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.225 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.225 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.226 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.226 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.227 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.227 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.227 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.228 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.251 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.252 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:26:15.342 WARNING [http-nio-8080-exec-17] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+02-Aug-2025 00:26:15.629 INFO [http-nio-8080-exec-17] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.615] ms
+02-Aug-2025 00:26:15.630 INFO [http-nio-8080-exec-14] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+02-Aug-2025 00:29:15.919 WARNING [http-nio-8080-exec-25] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+02-Aug-2025 00:29:15.919 WARNING [http-nio-8080-exec-25] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 00:29:16.436 INFO [http-nio-8080-exec-25] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+02-Aug-2025 00:29:16.448 INFO [http-nio-8080-exec-23] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+02-Aug-2025 00:29:16.448 WARNING [http-nio-8080-exec-23] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+02-Aug-2025 00:29:16.651 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 00:29:17.343 INFO [http-nio-8080-exec-23] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+02-Aug-2025 00:29:17.656 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.658 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.658 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.658 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.659 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.659 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.660 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.660 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.660 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.661 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.661 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.661 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.662 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.662 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.662 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.662 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.663 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.663 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.663 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.664 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.664 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.706 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.707 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:29:17.796 WARNING [http-nio-8080-exec-23] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+02-Aug-2025 00:29:18.083 INFO [http-nio-8080-exec-23] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.635] ms
+02-Aug-2025 00:29:18.088 INFO [http-nio-8080-exec-24] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+02-Aug-2025 00:38:48.376 WARNING [http-nio-8080-exec-35] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+02-Aug-2025 00:38:48.376 WARNING [http-nio-8080-exec-35] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 00:38:48.886 INFO [http-nio-8080-exec-35] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+02-Aug-2025 00:38:48.894 INFO [http-nio-8080-exec-34] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+02-Aug-2025 00:38:48.894 WARNING [http-nio-8080-exec-34] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+02-Aug-2025 00:38:49.789 INFO [http-nio-8080-exec-34] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+02-Aug-2025 00:38:50.090 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.106 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.121 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.121 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.122 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.122 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 00:38:50.204 WARNING [http-nio-8080-exec-34] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+02-Aug-2025 00:38:50.502 INFO [http-nio-8080-exec-34] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.607] ms
+02-Aug-2025 00:38:50.504 INFO [http-nio-8080-exec-38] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+02-Aug-2025 00:38:51.854 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 01:39:53.959 WARNING [http-nio-8080-exec-42] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+02-Aug-2025 01:39:53.959 WARNING [http-nio-8080-exec-42] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 01:39:54.467 INFO [http-nio-8080-exec-42] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+02-Aug-2025 01:39:54.479 INFO [http-nio-8080-exec-46] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+02-Aug-2025 01:39:54.480 WARNING [http-nio-8080-exec-46] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+02-Aug-2025 01:39:54.714 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 01:39:54.714 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 01:39:55.377 INFO [http-nio-8080-exec-46] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+02-Aug-2025 01:39:55.678 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.680 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.680 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.681 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.681 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.681 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.682 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.682 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.683 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.683 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.684 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.684 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.684 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.684 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.685 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.685 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.685 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.686 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.687 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.687 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.687 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.687 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.687 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.687 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 01:39:55.765 WARNING [http-nio-8080-exec-46] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+02-Aug-2025 01:39:56.040 INFO [http-nio-8080-exec-46] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.560] ms
+02-Aug-2025 01:39:56.042 INFO [http-nio-8080-exec-39] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.
+02-Aug-2025 01:42:58.185 INFO [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+02-Aug-2025 01:42:58.185 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+02-Aug-2025 01:42:58.195 INFO [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+02-Aug-2025 01:42:58.216 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [StockControl_API] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 01:42:58.224 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [helder] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+02-Aug-2025 01:42:58.225 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [helder] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 01:42:58.225 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+02-Aug-2025 01:42:58.236 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+02-Aug-2025 01:42:58.269 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1248)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:857)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+02-Aug-2025 17:58:30.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.8
+02-Aug-2025 17:58:30.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jun 5 2025 17:49:55 UTC
+02-Aug-2025 17:58:30.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.8.0
+02-Aug-2025 17:58:30.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+02-Aug-2025 17:58:30.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+02-Aug-2025 17:58:30.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+02-Aug-2025 17:58:30.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-22
+02-Aug-2025 17:58:30.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       22.0.2+9-70
+02-Aug-2025 17:58:30.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+02-Aug-2025 17:58:30.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+02-Aug-2025 17:58:30.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+02-Aug-2025 17:58:30.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\logging.properties
+02-Aug-2025 17:58:30.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Aug-2025 17:58:30.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+02-Aug-2025 17:58:30.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Aug-2025 17:58:30.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+02-Aug-2025 17:58:30.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+02-Aug-2025 17:58:30.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+02-Aug-2025 17:58:30.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Aug-2025 17:58:30.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Aug-2025 17:58:30.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+02-Aug-2025 17:58:30.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+02-Aug-2025 17:58:30.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8
+02-Aug-2025 17:58:30.483 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\temp
+02-Aug-2025 17:58:30.488 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [2.0.9] con la versión APR [1.7.6].
+02-Aug-2025 17:58:30.506 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.5.0 8 Apr 2025]
+02-Aug-2025 17:58:30.725 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+02-Aug-2025 17:58:30.743 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [445] milliseconds
+02-Aug-2025 17:58:30.785 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+02-Aug-2025 17:58:30.785 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.8]
+02-Aug-2025 17:58:30.793 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+02-Aug-2025 17:58:30.806 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+02-Aug-2025 17:58:32.114 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+02-Aug-2025 17:58:32.550 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.553 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.554 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.554 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.555 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.556 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.556 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.557 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.558 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.558 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.558 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.559 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.559 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.560 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.560 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.561 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.561 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.561 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.562 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.562 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.562 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.563 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.563 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.575 WARNING [main] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:32.675 WARNING [main] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+02-Aug-2025 17:58:33.076 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [2.283] ms
+02-Aug-2025 17:58:33.077 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\StockControl_API.xml]
+02-Aug-2025 17:58:33.077 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/StockControl_API] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\StockControl_API.xml] has been ignored
+02-Aug-2025 17:58:33.962 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+02-Aug-2025 17:58:33.965 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\StockControl_API.xml] has finished in [888] ms
+02-Aug-2025 17:58:33.965 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\docs] de la aplicación web
+02-Aug-2025 17:58:33.990 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\docs] has finished in [25] ms
+02-Aug-2025 17:58:33.990 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\examples] de la aplicación web
+02-Aug-2025 17:58:34.300 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\examples] has finished in [310] ms
+02-Aug-2025 17:58:34.301 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\host-manager] de la aplicación web
+02-Aug-2025 17:58:34.326 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\host-manager] has finished in [25] ms
+02-Aug-2025 17:58:34.326 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\manager] de la aplicación web
+02-Aug-2025 17:58:34.353 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\manager] has finished in [27] ms
+02-Aug-2025 17:58:34.354 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\ROOT] de la aplicación web
+02-Aug-2025 17:58:34.372 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\webapps\ROOT] has finished in [18] ms
+02-Aug-2025 17:58:34.375 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+02-Aug-2025 17:58:34.391 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3646] milliseconds
+02-Aug-2025 17:58:36.856 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/helder]
+02-Aug-2025 17:58:36.911 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml]
+02-Aug-2025 17:58:36.913 WARNING [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/helder] in deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has been ignored
+02-Aug-2025 17:58:37.861 INFO [http-nio-8080-exec-1] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+02-Aug-2025 17:58:38.179 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.181 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.181 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.181 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.182 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.182 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.183 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.183 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.184 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.184 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.185 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.185 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.185 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.186 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.186 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.186 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.187 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.187 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.187 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.187 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.188 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.197 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.199 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.201 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener$ClassReaderWrapper.accept Unsupported class file major version 66
+02-Aug-2025 17:58:38.285 WARNING [http-nio-8080-exec-1] org.glassfish.jersey.server.wadl.WadlFeature.configure JAXBContext implementation could not be found. WADL feature is disabled.
+02-Aug-2025 17:58:38.589 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Administrador\Documents\proyecto_final_helder_java-js\apache-tomcat-11.0.8-windows-x64\apache-tomcat-11.0.8\conf\Catalina\localhost\helder.xml] has finished in [1.678] ms
+02-Aug-2025 17:58:38.591 INFO [http-nio-8080-exec-6] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/helder]] after start() had already been called. The second call will be ignored.

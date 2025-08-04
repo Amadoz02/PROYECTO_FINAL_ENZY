@@ -16,6 +16,7 @@ public class ProductoDAO {
           p.id_producto,
           p.nombre,
           p.precio,
+          p.stock,
           p.descripcion,
           p.estado,
           p.id_talla,
@@ -45,6 +46,7 @@ public class ProductoDAO {
             p.setId_producto(rs.getInt("id_producto"));
             p.setNombre(rs.getString("nombre"));
             p.setPrecio(rs.getDouble("precio"));
+            p.setStock(rs.getInt("stock"));
             p.setDescripcion(rs.getString("descripcion"));
             p.setEstado(rs.getString("estado"));
 
@@ -81,6 +83,7 @@ public class ProductoDAO {
                 p.id_producto,
                 p.nombre,
                 p.precio,
+                p.stock,
                 p.descripcion,
                 p.estado,
                 p.id_talla,
@@ -107,6 +110,7 @@ public class ProductoDAO {
             p.setId_producto(rs.getInt("id_producto"));
             p.setNombre(rs.getString("nombre"));
             p.setPrecio(rs.getDouble("precio"));
+            p.setStock(rs.getInt("stock"));
             p.setDescripcion(rs.getString("descripcion"));
             p.setEstado(rs.getString("estado"));
             p.setId_talla(rs.getInt("id_talla"));
@@ -129,31 +133,33 @@ public class ProductoDAO {
 
     public void insertar(Producto p) throws Exception {
         Connection con = getConexion();
-        String sql = "INSERT INTO productos (nombre, precio, descripcion, id_talla, id_categoria, id_genero, estado) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO productos (nombre, precio,stock, descripcion, id_talla, id_categoria, id_genero, estado) VALUES (?, ?, ?, ?, ?, ?, ?)";
         PreparedStatement ps = con.prepareStatement(sql);
         ps.setString(1, p.getNombre());
         ps.setDouble(2, p.getPrecio());
-        ps.setString(3, p.getDescripcion());
-        ps.setInt(4, p.getId_talla());
-        ps.setInt(5, p.getId_categoria());
-        ps.setInt(6, p.getId_genero());
-        ps.setString(7, p.getEstado());
+        ps.setInt(3, p.getStock());
+        ps.setString(4, p.getDescripcion());
+        ps.setInt(5, p.getId_talla());
+        ps.setInt(6, p.getId_categoria());
+        ps.setInt(7, p.getId_genero());
+        ps.setString(8, p.getEstado());
         ps.executeUpdate();
         con.close();
     }
 
     public void actualizar(Producto p) throws Exception {
         Connection con = getConexion();
-        String sql = "UPDATE productos SET nombre=?, precio=?, descripcion=?, id_talla=?, id_categoria=?, id_genero=?, estado=? WHERE id_producto=?";
+        String sql = "UPDATE productos SET nombre=?, precio=?, stock=?, descripcion=?, id_talla=?, id_categoria=?, id_genero=?, estado=? WHERE id_producto=?";
         PreparedStatement ps = con.prepareStatement(sql);
         ps.setString(1, p.getNombre());
         ps.setDouble(2, p.getPrecio());
-        ps.setString(3, p.getDescripcion());
-        ps.setInt(4, p.getId_talla());
-        ps.setInt(5, p.getId_categoria());
-        ps.setInt(6, p.getId_genero());
-        ps.setString(7, p.getEstado());
-        ps.setInt(8, p.getId_producto());
+        ps.setInt(3, p.getStock());
+        ps.setString(4, p.getDescripcion());
+        ps.setInt(5, p.getId_talla());
+        ps.setInt(6, p.getId_categoria());
+        ps.setInt(7, p.getId_genero());
+        ps.setString(8, p.getEstado());
+        ps.setInt(9, p.getId_producto());
         ps.executeUpdate();
         con.close();
     }

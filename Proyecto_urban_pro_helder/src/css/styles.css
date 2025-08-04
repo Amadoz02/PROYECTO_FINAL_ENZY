@@ -4,6 +4,9 @@
 @import url(./page_bienvenida.css);
 @import url(./vistas_dinamicas.css);
 @import url(./cards.css);
+@import url(./modal.css);
+@import url(./carrito.css);
+
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_left_alt");
 :root {
   --color-black: #000;

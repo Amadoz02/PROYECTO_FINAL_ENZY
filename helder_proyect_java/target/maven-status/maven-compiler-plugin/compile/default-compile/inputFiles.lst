@@ -1,10 +1,14 @@
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\ApplicationConfig.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\AuthResource.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\CarritoResource.java
+C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\CarritoService.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\CategoriaResource.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\Conexion.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\CorsFilter.java
+C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\CustomException.java
+C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\CustomExceptionMapper.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\DetalleCarritoResource.java
+C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\DetallesCarritoService.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\DireccionResource.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\FavoritoResource.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\GeneroResource.java
@@ -16,7 +20,9 @@ C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_ja
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\TallaResource.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\UsuarioResource.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\Utilidades.java
+C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\Validador.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\controlador\VentaResource.java
+C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\ApiResponse.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\Carrito.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\CarritoDAO.java
 C:\Users\Administrador\Documents\proyecto_final_helder_java-js\helder_proyect_java\src\main\java\modelo\Categoria.java

@@ -82,7 +82,12 @@
   background-color: var(--color-black);
   
 }
-
+.text{
+  color: var(--color-white);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
 /* HEADER FIJO */
 .home__header {
   grid-area: header;

@@ -8,6 +8,8 @@ package controlador; // Esta línea indica que esta clase pertenece al paquete l
  */
 import java.security.MessageDigest; // Librería que permite trabajar con funciones de encriptación como SHA-256
 
+
+
 public class Utilidades {
 
     /**

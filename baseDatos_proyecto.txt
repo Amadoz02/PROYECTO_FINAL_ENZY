@@ -1,118 +1,77 @@
-DROP DATABASE IF EXISTS urban_pro;
+CREATE DATABASE IF NOT EXISTS `urban_pros`;
+USE `urban_pros`;
 
-CREATE DATABASE IF NOT EXISTS `urban_pro`;
-USE `urban_pro`;
-
+-- Tablas independientes (sin dependencias)
 CREATE TABLE IF NOT EXISTS `roles` (
   `id_rol` int NOT NULL AUTO_INCREMENT,
   `nombre_rol` varchar(25) NOT NULL,
   PRIMARY KEY (`id_rol`)
-) ;
-
-CREATE TABLE IF NOT EXISTS `tallas` (
-  `id_talla` int NOT NULL AUTO_INCREMENT,
-  `talla` char(1) DEFAULT NULL,
-  PRIMARY KEY (`id_talla`)
 );
 
 CREATE TABLE IF NOT EXISTS `generos` (
   `id_genero` int NOT NULL AUTO_INCREMENT,
-  `tipo_genero` enum('male','female','unisex') NOT NULL,
+  `tipo_genero` enum('Male','Female','Unisex') NOT NULL,
   PRIMARY KEY (`id_genero`)
+);
+
+CREATE TABLE IF NOT EXISTS `tallas` (
+  `id_talla` int NOT NULL AUTO_INCREMENT,
+  `talla` char(2) DEFAULT NULL,
+  PRIMARY KEY (`id_talla`)
 );
 
 CREATE TABLE IF NOT EXISTS `categorias` (
   `id_categoria` int NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(50)  NOT NULL,
-  `estado` enum('Activo','Inactivo')  DEFAULT 'Activo',
+  `nombre` varchar(50) NOT NULL,
+  `estado` enum('Activo','Inactivo') DEFAULT 'Activo',
   PRIMARY KEY (`id_categoria`)
-) ;
+);
 
 CREATE TABLE IF NOT EXISTS `metodos_pago` (
   `id_metodo` int NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(50)  NOT NULL,
+  `nombre` varchar(50) NOT NULL,
   PRIMARY KEY (`id_metodo`)
-) ;
+);
 
+-- Tablas con dependencias de nivel 1
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `id_usuario` int NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) NOT NULL,
   `correo` varchar(100) NOT NULL,
   `contrasena` varchar(100) NOT NULL,
   `id_rol` int DEFAULT NULL,
-  `estado` enum('Activo','inactivo') NOT NULL DEFAULT 'Activo',
+  `estado` enum('Activo','Inactivo') NOT NULL DEFAULT 'Activo',
   PRIMARY KEY (`id_usuario`),
   UNIQUE KEY `correo` (`correo`),
-  KEY `fk_usuarios_roles` (`id_rol`),
   CONSTRAINT `fk_usuarios_roles` FOREIGN KEY (`id_rol`) REFERENCES `roles` (`id_rol`) ON DELETE SET NULL
-) ;
-
-CREATE TABLE IF NOT EXISTS `carritos` (
-  `id_carrito` int NOT NULL AUTO_INCREMENT,
-  `id_cliente` int DEFAULT NULL UNIQUE,  -- Esta línea ya crea un índice único
-  `estado` enum('activo','cerrado') DEFAULT 'activo',
-  PRIMARY KEY (`id_carrito`),
-  CONSTRAINT `carritos_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `usuarios` (`id_usuario`)
-) ;
+);
 
 CREATE TABLE IF NOT EXISTS `productos` (
   `id_producto` int NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) NOT NULL,
   `precio` decimal(10,2) NOT NULL,
+  `stock` int DEFAULT '1',
   `descripcion` text,
   `id_talla` int DEFAULT NULL,
   `id_categoria` int DEFAULT NULL,
   `id_genero` int DEFAULT NULL,
-  `estado` enum('activo','inactivo') DEFAULT 'activo',
+  `estado` enum('Activo','Inactivo') DEFAULT 'Activo',
   PRIMARY KEY (`id_producto`),
-  KEY `id_talla` (`id_talla`),
-  KEY `id_categoria` (`id_categoria`),
-  KEY `id_genero` (`id_genero`),
   CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`id_talla`) REFERENCES `tallas` (`id_talla`) ON DELETE SET NULL,
   CONSTRAINT `productos_ibfk_2` FOREIGN KEY (`id_categoria`) REFERENCES `categorias` (`id_categoria`) ON DELETE SET NULL,
-  CONSTRAINT `productos_ibfk_4` FOREIGN KEY (`id_genero`) REFERENCES `generos` (`id_genero`) ON DELETE SET NULL
-)auto_increment=1 ;
+  CONSTRAINT `productos_ibfk_3` FOREIGN KEY (`id_genero`) REFERENCES `generos` (`id_genero`) ON DELETE SET NULL
+);
 
-CREATE TABLE IF NOT EXISTS `ventas` (
-  `id_venta` int NOT NULL AUTO_INCREMENT,
-  `id_usuario` int DEFAULT NULL,
-  `id_carrito` INT DEFAULT NULL,
-  `fecha` datetime DEFAULT CURRENT_TIMESTAMP,
-  `total` decimal(10,2) DEFAULT NULL,
-  `id_metodo` int DEFAULT NULL,
-  `estado` enum('procesando','exitosa') DEFAULT NULL,
-  PRIMARY KEY (`id_venta`),
-  KEY `id_usuario` (`id_usuario`),
-  KEY `id_metodo` (`id_metodo`),
-  KEY `id_carrito` (`id_carrito`),
-  CONSTRAINT `ventas_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`),
-  CONSTRAINT `ventas_ibfk_2` FOREIGN KEY (`id_metodo`) REFERENCES `metodos_pago` (`id_metodo`),
-  CONSTRAINT `ventas_ibfk_3` FOREIGN KEY (`id_carrito`) REFERENCES `carritos` (`id_carrito`)
-) ;
-
-CREATE TABLE IF NOT EXISTS `detalles_carrito` (
-  `id_detalle` int NOT NULL AUTO_INCREMENT,
-  `id_carrito` int NOT NULL,
-  `id_producto` int NOT NULL,
-  `cantidad` int DEFAULT '1',
-  `subtotal` decimal(10,2) NOT NULL,
-  PRIMARY KEY (`id_detalle`),
-  KEY `id_carrito` (`id_carrito`),
-  KEY `id_producto` (`id_producto`),
-  CONSTRAINT `detalles_carrito_ibfk_1` FOREIGN KEY (`id_carrito`) REFERENCES `carritos` (`id_carrito`),
-  CONSTRAINT `detalles_carrito_ibfk_2` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`)
-) ;
-
-CREATE TABLE IF NOT EXISTS `favoritos` (
-  `id_favorito` int NOT NULL AUTO_INCREMENT,
-  `id_usuario` int DEFAULT NULL,
-  `id_producto` int DEFAULT NULL,
-  PRIMARY KEY (`id_favorito`),
-  KEY `id_usuario` (`id_usuario`),
-  KEY `id_producto` (`id_producto`),
-  CONSTRAINT `favoritos_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`),
-  CONSTRAINT `favoritos_ibfk_2` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`)
-) ;
+-- Tablas con dependencias de nivel 2
+CREATE TABLE IF NOT EXISTS `carritos` (
+  `id_carrito` int NOT NULL AUTO_INCREMENT,
+  `id_cliente` int DEFAULT NULL,
+  `estado` enum('Activo','Cerrado') DEFAULT 'Activo',
+  `fecha_creacion` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id_carrito`),
+  UNIQUE KEY `id_cliente` (`id_cliente`),
+  CONSTRAINT `carritos_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `usuarios` (`id_usuario`)
+);
 
 CREATE TABLE IF NOT EXISTS `direcciones` (
   `id_direccion` int NOT NULL AUTO_INCREMENT,
@@ -123,9 +82,8 @@ CREATE TABLE IF NOT EXISTS `direcciones` (
   `codigo_postal` varchar(20) DEFAULT NULL,
   `observaciones` text,
   PRIMARY KEY (`id_direccion`),
-  KEY `id_usuario` (`id_usuario`),
   CONSTRAINT `direcciones_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`)
-) ;
+);
 
 CREATE TABLE IF NOT EXISTS `imagenes` (
   `id_imagen` int NOT NULL AUTO_INCREMENT,
@@ -133,47 +91,101 @@ CREATE TABLE IF NOT EXISTS `imagenes` (
   `url_imagen` varchar(255) NOT NULL,
   `descripcion` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id_imagen`),
-  KEY `id_producto` (`id_producto`),
   CONSTRAINT `imagenes_ibfk_1` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`) ON DELETE CASCADE
-) ;
+);
 
+-- Tablas con dependencias de nivel 3
+CREATE TABLE IF NOT EXISTS `detalles_carrito` (
+  `id_detalle` int NOT NULL AUTO_INCREMENT,
+  `id_carrito` int NOT NULL,
+  `id_producto` int NOT NULL,
+  `cantidad` int DEFAULT '1',
+  `subtotal` decimal(10,2) NOT NULL,
+  PRIMARY KEY (`id_detalle`),
+  CONSTRAINT `detalles_carrito_ibfk_1` FOREIGN KEY (`id_carrito`) REFERENCES `carritos` (`id_carrito`),
+  CONSTRAINT `detalles_carrito_ibfk_2` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`)
+);
 
+CREATE TABLE IF NOT EXISTS `favoritos` (
+  `id_usuario` int NOT NULL,
+  `id_producto` int NOT NULL,
+  `fecha_agregado` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id_usuario`, `id_producto`),
+  CONSTRAINT `favoritos_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`),
+  CONSTRAINT `favoritos_ibfk_2` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`)
+);
 
-INSERT INTO roles (nombre_rol) VALUES ('SuperAdmin');
-INSERT INTO roles (nombre_rol) VALUES ('Admin');
-INSERT INTO roles (nombre_rol) VALUES ('Cliente');
+CREATE TABLE IF NOT EXISTS `ventas` (
+  `id_venta` int NOT NULL AUTO_INCREMENT,
+  `id_carrito` int NOT NULL,
+  `fecha` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `total` decimal(10,2) NOT NULL,
+  `id_metodo` int NOT NULL,
+  `estado` enum('Procesando','Exitosa') NOT NULL DEFAULT 'Procesando',
+  PRIMARY KEY (`id_venta`),
+  CONSTRAINT `ventas_ibfk_1` FOREIGN KEY (`id_metodo`) REFERENCES `metodos_pago` (`id_metodo`),
+  CONSTRAINT `ventas_ibfk_2` FOREIGN KEY (`id_carrito`) REFERENCES `carritos` (`id_carrito`)
+);
 
+-- Insertar roles
+INSERT INTO `roles` (`id_rol`, `nombre_rol`) VALUES
+(1, 'Super-Admin'),
+(2, 'Admin'),
+(3, 'Cliente');
 
--- TALLAS
-INSERT INTO tallas (id_talla, talla) VALUES
+-- Insertar géneros
+INSERT INTO `generos` (`id_genero`, `tipo_genero`) VALUES
+(1, 'Male'),
+(2, 'Female'),
+(3, 'Unisex');
+
+-- Insertar tallas
+INSERT INTO `tallas` (`id_talla`, `talla`) VALUES
 (1, 'S'),
 (2, 'M'),
-(3, 'L'),
-(4, 'XL');
+(3, 'L');
 
--- GENEROS
-INSERT INTO generos (id_genero, tipo_genero) VALUES
-(1, 'MALE'),
-(2, 'FEMALE'),
-(3, 'UNISEX');
+-- Insertar categorías
+INSERT INTO `categorias` (`id_categoria`, `nombre`, `estado`) VALUES
+(1, 'Camisetas', 'Activo'),
+(2, 'Pantalones', 'Activo'),
+(3, 'Zapatos', 'Activo'),
+(4, 'Accesorios', 'Activo'),
+(5, 'Sudaderas', 'Activo');
 
--- CATEGORIAS
-INSERT INTO categorias (id_categoria, nombre) VALUES
-(1, 'Camisetas'),
-(2, 'Pantalones'),
-(3, 'Zapatos'),
-(4, 'Gorras'),
-(5, 'Accesorios');
+-- Insertar métodos de pago
+INSERT INTO `metodos_pago` (`id_metodo`, `nombre`) VALUES
+(1, 'Tarjeta de crédito'),
+(2, 'PayPal'),
+(3, 'Transferencia bancaria'),
+(4, 'Efectivo al recibir');
 
--- PRODUCTOS
-INSERT INTO productos (nombre, precio, descripcion, id_talla, id_categoria, id_genero, estado) VALUES
-('Camiseta Básica', 35000, 'Camiseta de algodón negra, corte clásico.', 1, 1, 1, 'activo');
-INSERT INTO productos (nombre, precio, descripcion, id_talla, id_categoria, id_genero, estado) VALUES
-('Blanca Oversize', 40000, 'Estilo urbano, ideal para looks casuales.', 2, 1, 3, 'activo');
-INSERT INTO productos (nombre, precio, descripcion, id_talla, id_categoria, id_genero, estado) VALUES
-('Pantalón Jogger Gris', 75000, 'Pantalón cómodo, perfecto para el día a día.', 3, 2, 1, 'activo');
-INSERT INTO productos (nombre, precio, descripcion, id_talla, id_categoria, id_genero, estado) VALUES
-('Zapatillas Urban', 120000, 'Calzado urbano con diseño moderno.', 3, 3, 3, 'activo');
-INSERT INTO productos (nombre, precio, descripcion, id_talla, id_categoria, id_genero, estado) VALUES
-('Gorra Negra', 25000, 'Gorra ajustable con logo bordado.', 1, 4, 3, 'activo');
+-- Insertar usuarios
+INSERT INTO `usuarios` (`id_usuario`, `nombre`, `correo`, `contrasena`, `id_rol`, `estado`) VALUES
+(1, 'Carlos Mendoza', 'superadmin@urbanpro.com', 'hola', 1, 'Activo'),
+(2, 'María González', 'admin@urbanpro.com', 'hola', 2, 'Activo'),
+(3, 'Juan Pérez', 'cliente1@urbanpro.com', 'hola', 3, 'Activo'),
+(4, 'Ana López', 'cliente2@urbanpro.com', 'hola', 3, 'Activo'),
+(5, 'Pedro Ramírez', 'cliente3@urbanpro.com', 'hola', 3, 'Activo');
+
+-- Insertar productos
+INSERT INTO `productos` (`id_producto`, `nombre`, `precio`, `stock`, `descripcion`, `id_talla`, `id_categoria`, `id_genero`, `estado`) VALUES
+(1, 'Camiseta básica blanca', 19.99, 100, 'Camiseta de algodón 100% color blanco', 2, 1, 3, 'Activo'),
+(2, 'Jeans ajustados negros', 49.99, 50, 'Pantalón jeans ajustado color negro', 3, 2, 2, 'Activo'),
+(3, 'Zapatillas deportivas', 79.99, 30, 'Zapatillas deportivas para running', 3, 3, 1, 'Activo'),
+(4, 'Gorra plana negra', 24.99, 75, 'Gorra estilo plano color negro', NULL, 1, 3, 'Activo'),
+(5, 'Sudadera con capucha', 59.99, 40, 'Sudadera con capucha y bolsillo canguro', 2, 5, 3, 'Activo'),
+(6, 'Reloj deportivo', 89.99, 20, 'Reloj resistente al agua con podómetro', NULL, 3, 3, 'Activo'),
+(7, 'Camisa formal azul', 39.99, 60, 'Camisa de vestir color azul marino', 2, 1, 1, 'Activo'),
+(8, 'Falda plisada negra', 34.99, 45, 'Falda plisada color negro', 1, 2, 2, 'Activo');
+
+-- Insertar direcciones de usuarios
+INSERT INTO `direcciones` (`id_direccion`, `id_usuario`, `direccion`, `ciudad`, `departamento`, `codigo_postal`, `observaciones`) VALUES
+(1, 1, 'Av. Principal 123, Edif. Centro, Piso 5', 'Bogotá', 'Cundinamarca', '110111', 'Oficina principal'),
+(2, 2, 'Carrera 45 #26-85', 'Medellín', 'Antioquia', '050012', 'Casa cerca del centro comercial'),
+(3, 3, 'Calle 72 #11-45', 'Bogotá', 'Cundinamarca', '110221', 'Apartamento 302'),
+(4, 3, 'Diagonal 25 #34-10', 'Cali', 'Valle del Cauca', '760045', 'Casa familiar'),
+(5, 4, 'Avenida Circunvalar 12-34', 'Barranquilla', 'Atlántico', '080020', 'Edificio Torre Azul, apto 601'),
+(6, 5, 'Carrera 10 #35-28', 'Cartagena', 'Bolívar', '130001', 'Segunda puerta a la derecha');
+
 

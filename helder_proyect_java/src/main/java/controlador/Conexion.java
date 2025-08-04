@@ -28,7 +28,7 @@ public class Conexion {
     public static Connection getConexion() throws Exception {
 
         // Dirección completa de la base de datos (host, puerto, nombre de la base)
-        String URL = "jdbc:mysql://localhost:3306/urban_pro";
+        String URL = "jdbc:mysql://localhost:3306/urban_pros";
 
         // Nombre de usuario para conectarse a la base de datos
         String USER = "root";

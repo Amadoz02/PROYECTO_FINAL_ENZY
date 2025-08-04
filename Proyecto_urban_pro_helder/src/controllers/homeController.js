@@ -1,5 +1,7 @@
 
-import { initProductoController } from './productoController.js';
+import  initProductoController  from './productoController.js';
+import  mostrarFavoritos  from './favoritosController.js';
+import carritoController from './carritoController.js';
 
 export default function homeController() {
   // Función para cargar contenido dinámico en el main interno
@@ -33,13 +35,17 @@ export default function homeController() {
         if (!res.ok) throw new Error("Vista no encontrada");
         return res.text();
       })
-      .then(html => {
+      .then(async html => {
         main.innerHTML = html;
         if (window.lucide) lucide.createIcons();
-        addInternalListeners();
+         addInternalListeners();
         console.log(`Sección '${section}' cargada correctamente.`);
         if (section === "productos") {
           initProductoController();
+        }else if (section === "favoritos") {
+          mostrarFavoritos();
+        }else if (section === "carrito") {
+          carritoController();
         }
       })
       .catch(err => {

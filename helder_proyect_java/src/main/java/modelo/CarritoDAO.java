@@ -16,7 +16,24 @@ public class CarritoDAO {
     public CarritoDAO(Connection con) {
         this.con = con;
     }
-
+    
+    public Carrito buscarCarritoActivoPorUsuario(int idUsuario) throws SQLException {
+    String sql = "SELECT * FROM carritos WHERE id_cliente = ? AND estado = 'activo'";
+    try (PreparedStatement stmt = con.prepareStatement(sql)) {
+        stmt.setInt(1, idUsuario);
+        ResultSet rs = stmt.executeQuery();
+        
+        if (rs.next()) {
+            Carrito c = new Carrito();
+            c.setId_carrito(rs.getInt("id_carrito"));
+            c.setId_usuario(rs.getInt("id_cliente"));
+            c.setEstado(rs.getString("estado"));
+            return c;
+        }
+        return null;
+    }
+}
+    
     // Obtener todos los carritos
     public List<Carrito> obtenerTodos() throws SQLException {
         List<Carrito> lista = new ArrayList<>();
@@ -28,7 +45,7 @@ public class CarritoDAO {
             Carrito c = new Carrito();
             c.setId_carrito(rs.getInt("id_carrito"));
             c.setId_usuario(rs.getInt("id_cliente"));           
-            c.setEstado(rs.getInt("estado"));
+            c.setEstado(rs.getString("estado"));
 
             lista.add(c);
         }
@@ -37,15 +54,23 @@ public class CarritoDAO {
     }
 
     // Insertar nuevo carrito
-    public void insertar(Carrito c) throws SQLException {
-        String sql = "INSERT INTO carritos (id_cliente, estado) VALUES (?,?)";
-        PreparedStatement stmt = con.prepareStatement(sql);
-        stmt.setInt(1, c.getId_usuario());
-       
-        stmt.setInt(3, c.getEstado());
+    public void insertar(Carrito carrito) throws SQLException {
+        String sql = "INSERT INTO carritos (id_cliente, estado) VALUES (?, ?)";
+        try (PreparedStatement stmt = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+            stmt.setInt(1, carrito.getId_usuario());  // Usa id_cliente
+            stmt.setString(2, carrito.getEstado());
 
-        stmt.executeUpdate();
+            int filas = stmt.executeUpdate();
+
+            if (filas > 0) {
+                ResultSet rs = stmt.getGeneratedKeys();
+                if (rs.next()) {
+                    carrito.setId_carrito(rs.getInt(1)); // Guardar el id generado en el objeto
+                }
+            }
+        }
     }
+
 
     // Actualizar carrito
     public void actualizar(Carrito c) throws SQLException {
@@ -53,7 +78,7 @@ public class CarritoDAO {
         PreparedStatement stmt = con.prepareStatement(sql);
         stmt.setInt(1, c.getId_usuario());
         stmt.setInt(3, c.getId_carrito());
-        stmt.setInt(4, c.getEstado());
+        stmt.setString(4, c.getEstado());
         stmt.executeUpdate();
     }
 
@@ -64,4 +89,5 @@ public class CarritoDAO {
         stmt.setInt(1, id_carrito);
         stmt.executeUpdate();
     }
+
 }

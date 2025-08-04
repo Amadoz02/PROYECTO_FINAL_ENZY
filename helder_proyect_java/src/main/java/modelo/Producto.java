@@ -14,6 +14,7 @@ public class Producto {
     private String talla;
     private String categoria;
     private String genero;
+    private int stock;
     private List<Imagen> imagenes;
 
     public List<Imagen> getImagenes() {
@@ -56,7 +57,10 @@ public class Producto {
 
     public int getId_genero() { return id_genero; }
     public void setId_genero(int id_genero) { this.id_genero = id_genero; }
-
+    
+    public int getStock() { return stock; }
+    public void setStock(int stock) { this.stock = stock; }
+    
     public String getEstado() { return estado; }
     public void setEstado(String estado) { this.estado = estado; }
 }

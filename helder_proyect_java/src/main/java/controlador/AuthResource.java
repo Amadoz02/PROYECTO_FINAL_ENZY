@@ -9,6 +9,7 @@ import java.io.StringReader;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import static controlador.Utilidades.encriptarSHA256;
 
 @Path("/auth")
 public class AuthResource {
@@ -34,7 +35,8 @@ public class AuthResource {
             }
 
             String correo = jsonObject.getString("correo");
-            String contrasena = jsonObject.getString("contrasena");
+            String passwSinEncriptar = jsonObject.getString("contrasena");
+            String contrasena= encriptarSHA256( passwSinEncriptar);
 
             try (Connection conn = Conexion.getConexion()) {
                 String sql = """
@@ -48,7 +50,7 @@ public class AuthResource {
                     stmt.setString(1, correo);
                     try (ResultSet rs = stmt.executeQuery()) {
                         if (rs.next()) {
-                            String passBD = rs.getString("contrasena");
+                            String passBD =rs.getString("contrasena");
                             int idUsuario = rs.getInt("id_usuario");
                             String rol = rs.getString("rol");
 

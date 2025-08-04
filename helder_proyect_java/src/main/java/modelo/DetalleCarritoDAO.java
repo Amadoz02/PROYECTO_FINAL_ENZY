@@ -26,6 +26,7 @@ public class DetalleCarritoDAO {
      * @throws SQLException si ocurre un error de base de datos.
      */
     public void insertar(DetalleCarrito detalle) throws SQLException {
+        
         String sql = "INSERT INTO detalles_carrito (id_carrito, id_producto, cantidad, subtotal) VALUES (?, ?, ?, ?)"; // Consulta SQL para insertar
         try (PreparedStatement stmt = con.prepareStatement(sql)) { // Prepara la consulta
             stmt.setInt(1, detalle.getId_carrito()); // Asigna el ID del carrito
@@ -39,6 +40,31 @@ public class DetalleCarritoDAO {
             throw e; // Vuelve a lanzar la excepción para que el llamador la maneje
         }
     }
+    
+    public List<DetalleCarrito> obtenerPorIdCarrito(int idCarrito) throws SQLException {
+        List<DetalleCarrito> lista = new ArrayList<>();
+        String sql = "SELECT * FROM detalles_carrito WHERE id_carrito = ?"; // Consulta SQL para seleccionar detalles por ID de carrito
+        try (PreparedStatement stmt = con.prepareStatement(sql)) { // Prepara la consulta
+            stmt.setInt(1, idCarrito); // Asigna el ID del carrito
+            ResultSet rs = stmt.executeQuery(); // Ejecuta la consulta
+            while (rs.next()) {
+                DetalleCarrito d = new DetalleCarrito(); // Crea una nueva instancia de DetalleCarrito
+                d.setId_detalle(rs.getInt("id_detalle")); // Asigna el ID del detalle
+                d.setId_carrito(rs.getInt("id_carrito")); // Asigna el ID del carrito
+                d.setId_producto(rs.getInt("id_producto")); // Asigna el ID del producto
+                d.setCantidad(rs.getInt("cantidad")); // Asigna la cantidad
+                d.setSubtotal(rs.getDouble("subtotal")); // Asigna el subtotal
+                lista.add(d); // Se agrega a la lista final
+            }
+        } catch (SQLException e) {
+            System.err.println("Error al obtener los detalles del carrito por ID: " + e.getMessage());
+            throw e; // Vuelve a lanzar la excepción para que el llamador la maneje
+        }
+        return lista; // Devuelve la lista de detalles del carrito
+    }
+
+
+    
 
     /**
      * Devuelve una lista de todos los detalles de carrito en la base de datos.
