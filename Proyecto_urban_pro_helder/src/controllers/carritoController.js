@@ -28,6 +28,7 @@ export default async function carritoController() {
           return [];
       }
   }
+  console.log(await getCartItems());
 
   // Obtener información completa de cada producto
   async function getProductDetails(productId) {
@@ -46,7 +47,7 @@ export default async function carritoController() {
     if (cartItems.length === 0) {
       cartItemsContainer.innerHTML = `
         <div class="empty-cart">
-          <p>Tu carrito está vacío</p>
+          <p class="text">Tu carrito está vacío</p>
           <a href="#productos" class="continue-shopping">Continuar comprando</a>
         </div>
       `;
@@ -62,6 +63,7 @@ export default async function carritoController() {
 
       const itemElement = document.createElement('div');
       itemElement.className = 'cart-item';
+      
       itemElement.innerHTML = `
         <div class="cart-item__image">
           <img src="${product.imagenes?.[0]?.url_imagen || 'default-product.jpg'}" 
@@ -73,15 +75,18 @@ export default async function carritoController() {
           <p class="cart-item__price">$${product.precio.toFixed(2)} c/u</p>
         </div>
         <div class="cart-item__quantity">
-          <button class="quantity-btn decrement" data-id="${product.id_producto}">-</button>
+          <button class="quantity-btn decrement" 
+                  data-detalle-id="${item.id_detalle}">-</button>
           <span class="quantity-value">${item.cantidad}</span>
-          <button class="quantity-btn increment" data-id="${product.id_producto}">+</button>
+          <button class="quantity-btn increment" 
+                  data-detalle-id="${item.id_detalle}">+</button>
         </div>
         <div class="cart-item__total">
           $${(product.precio * item.cantidad).toFixed(2)}
         </div>
-        <button class="cart-item__remove" data-id="${product.id_producto}">
-          <i class="trash-icon" data-lucide="trash-2"></i>
+        <button class="cart-item__remove" 
+                data-detalle-id="${item.id_detalle}">
+          <i class="trash-icon" data-lucide="trash-2" data-detalle-id="${item.id_detalle}"></i>
         </button>
       `;
       
@@ -117,9 +122,9 @@ export default async function carritoController() {
     // Botones para incrementar/disminuir cantidad
     document.querySelectorAll('.quantity-btn').forEach(btn => {
       btn.addEventListener('click', async (e) => {
-        const productId = e.target.dataset.id;
+        const detalleId = e.target.dataset.detalleId;
         const isIncrement = e.target.classList.contains('increment');
-        await updateCartItemQuantity(productId, isIncrement ? 1 : -1);
+        await updateCartItemQuantity(detalleId, isIncrement ? 1 : -1);
         await renderCartItems(); // Refrescar la vista
       });
     });
@@ -127,18 +132,18 @@ export default async function carritoController() {
     // Botones para eliminar items
     document.querySelectorAll('.cart-item__remove').forEach(btn => {
       btn.addEventListener('click', async (e) => {
-        const productId = e.target.closest('button').dataset.id;
-        await removeFromCart(productId);
+        const detalleId = e.target.closest('button').dataset.detalleId;
+        await removeFromCart(detalleId);
         await renderCartItems(); // Refrescar la vista
       });
     });
   }
 
   // Actualizar cantidad de un item en el carrito
-  async function updateCartItemQuantity(productId, change) {
+  async function updateCartItemQuantity(detalleId, change) {
     try {
       const currentItems = await getCartItems();
-      const currentItem = currentItems.find(item => item.id_producto == productId);
+      const currentItem = currentItems.find(item => item.id_detalle_carrito == detalleId);
       
       if (!currentItem) return;
 
@@ -146,10 +151,10 @@ export default async function carritoController() {
       
       if (newQuantity < 1) {
         // Si la cantidad sería 0, eliminar el item
-        await removeFromCart(productId);
+        await removeFromCart(detalleId);
       } else {
         // Actualizar la cantidad en el backend
-        await put(`detalles_carrito/${idUsuario}/${productId}`, {
+        await put(`detalles_carrito/${detalleId}`, {
           cantidad: newQuantity
         });
       }
@@ -159,9 +164,9 @@ export default async function carritoController() {
   }
 
   // Eliminar item del carrito
-  async function removeFromCart(productId) {
+  async function removeFromCart(detalleId) {
     try {
-      await del(`detalles_carrito/${idUsuario}/${productId}`);
+      await del(`detalles_carrito/${detalleId}`);
     } catch (error) {
       console.error('Error al eliminar del carrito:', error);
     }

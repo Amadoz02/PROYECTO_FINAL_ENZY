@@ -6,13 +6,14 @@ export default function initProductoController() {
   const idUsuario = sessionStorage.getItem("id_usuario"); // Obtén el ID del usuario desde sessionStorage
 
   function AddProductoAlCarrito() {
-    document.addEventListener("click", async (e) => {
+    productGrid.addEventListener("click", async (e) => {
       // Verifica si se hizo click en un botón con la clase 'product-card__btn'
       if (e.target.closest(".product-card__btn")) {
         const boton = e.target.closest(".product-card__btn");
         // Obtener cantidad seleccionada
-      const cantidad = parseInt(card.querySelector('.quantity-input').value) || 1;
-      
+        const productCard = boton.closest('.product-card');
+        const cantidad = parseInt(productCard.querySelector('.quantity-input')?.value) || 1;
+        
         // Extrae el ID del producto desde data-id
         const idProducto = boton.dataset.id;
         

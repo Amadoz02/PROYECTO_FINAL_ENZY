@@ -1,23 +1,15 @@
 /* Estilos para el carrito */
-.cart-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: var(--font-base);
-}
 
-.cart-items-container {
-  margin: 30px 0;
-  border-top: 1px solid #e0e0e0;
-}
 
 .cart-item {
+  background-color: #666;
   display: grid;
   grid-template-columns: 100px 2fr 1fr 1fr 50px;
   gap: 20px;
   align-items: center;
   padding: 20px 0;
   border-bottom: 1px solid #e0e0e0;
+  padding: 1rem;
 }
 
 .cart-item__image img {

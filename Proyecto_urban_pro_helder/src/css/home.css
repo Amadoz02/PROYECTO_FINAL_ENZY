@@ -212,7 +212,7 @@
 /* MAIN SCROLLABLE */
 .home__main {
   grid-area: main;
-  padding: 2rem 2rem 2rem 0.5rem;
+  /* padding: 2rem 2rem 2rem 0.5rem; */
   background-color: var(--color-black);
   height: calc(100vh - 70px);
   overflow-y: auto;

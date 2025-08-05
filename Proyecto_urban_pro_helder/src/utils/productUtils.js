@@ -148,6 +148,8 @@ export function crearCardProducto(producto, esFavorito, idUsuario) {
     cantidadContainer, // Añadir el selector de cantidad
     crearElemento('button', 'product-card__btn btn', 'Agregar')
   );
+  card.querySelector('.product-card__btn').dataset.id = producto.id_producto;
+  // Añadir atributo data-stock al botón "Agregar"
 
   return card;
 }
