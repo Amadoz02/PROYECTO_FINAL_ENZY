@@ -63,6 +63,23 @@ public class DetalleCarritoDAO {
         return lista; // Devuelve la lista de detalles del carrito
     }
 
+       public DetalleCarrito obtenerPorId(int id) throws SQLException {
+        String sql = "SELECT * FROM detalles_carrito WHERE id_detalle = ?";
+        try (PreparedStatement stmt = con.prepareStatement(sql)) {
+            stmt.setInt(1, id);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+                DetalleCarrito d = new DetalleCarrito();
+                d.setId_detalle(rs.getInt("id_detalle"));
+                d.setId_carrito(rs.getInt("id_carrito"));
+                d.setId_producto(rs.getInt("id_producto"));
+                d.setCantidad(rs.getInt("cantidad"));
+                d.setSubtotal(rs.getDouble("subtotal"));
+                return d;
+            }
+            return null; // No encontrado
+        }
+    }
 
     
 
@@ -99,6 +116,21 @@ public class DetalleCarritoDAO {
      * @throws SQLException si ocurre un error.
      */
     public void actualizar(DetalleCarrito detalle) throws SQLException {
+        String sql = "UPDATE detalles_carrito SET id_carrito = ?, id_producto = ?, cantidad = ?, subtotal = ? WHERE id_detalle = ?"; // Consulta SQL para actualizar
+        try (PreparedStatement stmt = con.prepareStatement(sql)) { // Prepara la consulta
+            stmt.setInt(1, detalle.getId_carrito()); // Asigna el ID del carrito
+            stmt.setInt(2, detalle.getId_producto()); // Asigna el ID del producto
+            stmt.setInt(3, detalle.getCantidad()); // Asigna la cantidad
+            stmt.setDouble(4, detalle.getSubtotal()); // Asigna el subtotal
+            stmt.setInt(5, detalle.getId_detalle()); // Asigna el ID del detalle a actualizar
+            stmt.executeUpdate(); // Ejecuta el UPDATE
+        } catch (SQLException e) {
+            // Mensaje de error personalizado para problemas de SQL
+            System.err.println("Error al actualizar el detalle del carrito: " + e.getMessage());
+            throw e; // Vuelve a lanzar la excepción para que el llamador la maneje
+        }
+    }
+        public void actualizarParcial(DetalleCarrito detalle) throws SQLException {
         String sql = "UPDATE detalles_carrito SET id_carrito = ?, id_producto = ?, cantidad = ?, subtotal = ? WHERE id_detalle = ?"; // Consulta SQL para actualizar
         try (PreparedStatement stmt = con.prepareStatement(sql)) { // Prepara la consulta
             stmt.setInt(1, detalle.getId_carrito()); // Asigna el ID del carrito

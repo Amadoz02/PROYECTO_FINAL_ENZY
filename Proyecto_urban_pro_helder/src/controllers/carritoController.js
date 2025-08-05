@@ -1,4 +1,4 @@
-import { get, put, del } from '../utils/manejo_api.js';
+import { get, put, del, patch } from '../utils/manejo_api.js';
 
 export default async function carritoController() {
   const cartItemsContainer = document.getElementById('cart-grid');
@@ -28,7 +28,7 @@ export default async function carritoController() {
           return [];
       }
   }
-  console.log(await getCartItems());
+  // console.log(await getCartItems());
 
   // Obtener información completa de cada producto
   async function getProductDetails(productId) {
@@ -143,7 +143,7 @@ export default async function carritoController() {
   async function updateCartItemQuantity(detalleId, change) {
     try {
       const currentItems = await getCartItems();
-      const currentItem = currentItems.find(item => item.id_detalle_carrito == detalleId);
+      const currentItem = currentItems.find(item => item.id_detalle == detalleId);
       
       if (!currentItem) return;
 
@@ -154,9 +154,11 @@ export default async function carritoController() {
         await removeFromCart(detalleId);
       } else {
         // Actualizar la cantidad en el backend
-        await put(`detalles_carrito/${detalleId}`, {
+        await patch(`detalles_carrito/${detalleId}`, {
+          id_detalle: parseInt(detalleId),
           cantidad: newQuantity
         });
+
       }
     } catch (error) {
       console.error('Error al actualizar cantidad:', error);

@@ -25,6 +25,19 @@ export const post = async (endpoint, objeto) => {
   return datos;
 }
 
+export const patch = async (endpoint, objeto) => {
+  const respuesta = await fetch(url + endpoint, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json',
+      'usuarioId': idUsuario ? idUsuario : '' // Asegura que el usuarioId se envíe si está disponible
+    },
+    body: JSON.stringify(objeto)
+  });
+  const datos = await respuesta.json();  
+  return datos;
+}
+
 export const put = async (endpoint, objeto) => {
   const respuesta = await fetch(url + endpoint, {
     method: 'PUT',

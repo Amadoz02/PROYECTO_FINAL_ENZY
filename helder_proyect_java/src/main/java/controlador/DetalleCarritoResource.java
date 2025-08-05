@@ -57,7 +57,6 @@ public class DetalleCarritoResource {
     @POST
     @Consumes(MediaType.APPLICATION_JSON) // Especifica que el método consume JSON
     @Produces(MediaType.APPLICATION_JSON) // Especifica que el método produce JSON
-
     public Response agregarProductoAlCarrito(
             @HeaderParam("usuarioId") int usuarioId,
             DetalleCarrito detalle) throws Exception {
@@ -130,7 +129,52 @@ public class DetalleCarritoResource {
             }
         }
     }
+    @PATCH
+    @Path("/{id}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response actualizarParcial(@PathParam("id") int id, DetalleCarrito detalleParcial) {
+        Connection con = null;
+        try {
+            con = Conexion.getConexion();
+            DetalleCarritoDAO dao = new DetalleCarritoDAO(con);
 
+            // 1. Obtener detalle actual
+            DetalleCarrito actual = dao.obtenerPorId(id);
+            if (actual == null) {
+                return Response.status(Response.Status.NOT_FOUND)
+                        .entity("{\"error\":\"Detalle no encontrado\"}")
+                        .build();
+            }
+
+            // 2. Aplicar cambios solo si vienen en el JSON (usa objetos, no primitivos)
+            if (detalleParcial.getId_carrito() != 0) {
+                actual.setId_carrito(detalleParcial.getId_carrito());
+            }
+            if (detalleParcial.getId_producto() != 0) {
+                actual.setId_producto(detalleParcial.getId_producto());
+            }
+            if (detalleParcial.getCantidad() != 0) {
+                actual.setCantidad(detalleParcial.getCantidad());
+            }
+            if (detalleParcial.getSubtotal() != 0.0) {
+                actual.setSubtotal(detalleParcial.getSubtotal());
+            }
+
+            // 3. Guardar en la base de datos
+            dao.actualizarParcial(actual);
+
+            return Response.ok("{\"mensaje\":\"Detalle actualizado parcialmente\"}").build();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
+                    .entity("{\"error\":\"Error al actualizar el detalle\"}")
+                    .build();
+        }
+    }
+
+    
     /**
      * Elimina un detalle según su ID.
      * @param id identificador del detalle a eliminar.
